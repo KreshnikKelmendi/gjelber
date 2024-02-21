@@ -33,7 +33,7 @@ const Header = () => {
           )}
         </div>
 
-        <ul className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute font-normal text-[12px] lg:static bg-[#FFF6E7] lg:z-auto z-50 lg:space-x-14 left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-18' : 'top-[-490px]'}`}>
+        <ul className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute font-normal text-[15px] lg:text-[13px] lg:static bg-[#FFF6E7] lg:z-auto z-50 lg:space-x-14 left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-18' : 'top-[-490px]'}`}>
           <li className='lg:ml-8 lg:my-0 my-7 font-custom'>
             <NavLink onClick={closeMenu} exact to="/" className='text-gray-800 hover:text-gray-400 duration-500 active:text-red-500'>Ballina</NavLink>
           </li>
