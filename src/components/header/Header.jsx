@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Button from './Button';
 import menu from "../assets/menu.png";
 import closeIcon from "../assets/remove.png";  // Replace with your close icon image
@@ -18,14 +18,14 @@ const Header = () => {
 
   return (
     <div className='w-full sticky'>
-      <div className='lg:flex bg-[#FFF6E7] items-center justify-between py-4 lg:px-10 px-7'>
+      <div className='lg:flex bg-[#FFF6E7] items-center justify-between py-4 lg:px-10 px-5'>
         <div className='font-bold text-2xl cursor-pointer flex items-center font-custom text-gray-800'>
           <span className='text-3xl text-indigo-600 mr-1 pt-2'>
             <img className='w-[127px] h-auto' src={logo} alt='' />
           </span>
         </div>
 
-        <div onClick={toggleMenu} className='text-3xl absolute right-6 top-5 cursor-pointer lg:hidden'>
+        <div onClick={toggleMenu} className='text-3xl absolute right-5 top-5 cursor-pointer lg:hidden'>
           {open ? (
             <img className='w-7 h-7 object-cover' src={closeIcon} alt='' />
           ) : (
@@ -49,9 +49,12 @@ const Header = () => {
           <li className='lg:ml-8 lg:my-0 my-7 font-custom'>
             <NavLink onClick={closeMenu} to="/contact" className=' text-gray-800 hover:text-gray-400 duration-500 active:text-red-500'>Kontakti</NavLink>
           </li>
-          <Button>
-            <NavLink onClick={closeMenu} to="/shpalljet" className=' text-white hover:text-white duration-500 active:text-red-500'>Shpalljet</NavLink>
+          <Link onClick={closeMenu} to="/shpalljet">
+
+          <Button className='text-white hover:text-white duration-500 active:text-red-500'>
+            Shpalljet
           </Button>
+          </Link>
         </ul>
       </div>
     </div>

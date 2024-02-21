@@ -60,7 +60,7 @@ const Ads = () => {
 
   return (
     <>
-    <div className='lg:flex w-full px-7 lg:px-10 mt-8 lg:mt-0 lg:py-6'>
+    <div className='lg:flex w-full px-5 lg:px-10 mt-8 lg:mt-0 lg:py-6'>
     <div className='lg:flex w-full'>
         <div className='w-full items-center justify-center h-[10vh] lg:h-[189px] rounded-[6px] flex bg-[#003249] text-white'>
             <img className='w-[33px] h-[40px] object-cover' src={flowerLogo} alt='' />
@@ -73,17 +73,17 @@ const Ads = () => {
 </div>
     
    
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-2 mt-2 px-7 lg:px-10'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-2 mt-2 px-5 lg:px-10'>
                 {shpalljet?.map((column, index) => (
                     <div key={index} className='flex flex-col lg:flex-row' style={{ marginTop: isLargeDevice ? column.margin : 0 }}>
-                        <div style={{ backgroundColor: column.background }} className={`lg:w-1/2 lg:h-[466px] h-fit py-5 rounded-tl-[6px] rounded-tr-[6px] lg:rounded-tr-none lg:rounded-bl-[6px] px-5 lg:py-20 justify-center items-center text-[${column.textColor}]`}>
-                            <p className={`lg:text-[30px] font-normal text-[${column.textColor}] lg:leading-[32.32px] font-custom`}>{column.title}</p>
+                        <div style={{ backgroundColor: column.background }} className={`lg:w-1/2 lg:h-[466px] h-fit py-10 z-50 grid rounded-tl-[6px] rounded-tr-[6px] lg:rounded-tr-none lg:rounded-bl-[6px] px-5 lg:py-20 justify-center items-center text-[${column.textColor}]`}>
+                            <p className={`lg:text-[20px] uppercase font-normal text-[${column.textColor}] lg:leading-[32.32px] font-custom`}>{column.title}</p>
                             <p className={`py-5 text-[15px] leading-[25px] font-custom text-[${column.textColor}]`}>
                                  {column?.description}
                             </p>
-                            <p className={`py-2 text-[15px] leading-[25px] font-custom text-[${column.textColor}]`}>Data e publikimit: {column.publicationDate}</p>
+                            <p className={`py-5 text-[12px] leading-[25px] font-custom text-gray-500`}>Data e publikimit: {column.publicationDate}</p>
                             <Link to={`/shpalljet/${column.id}`} onClick={() => window.scrollTo({ top: 0, left: 0 })}>
-                                <button className={`border-[2px] rounded-[4px] px-8 py-1 font-medium text-[${column.buttonColor}] border-[${column.buttonColor}] text-[16px] font-custom`}>Më shumë</button>
+                                <button className={`border-[2px] rounded-[4px] px-8 py-1 font-medium text-[${column.buttonColor}] border-[${column.buttonColor}] hover:bg-white hover:text-black hover:border-none text-[16px] font-custom`}>Më shumë</button>
                             </Link>
                         </div>
                         <div className='bg-[#6ADB84] text-[22px] text-white justify-centeri items-center grid lg:w-1/2 w-full h-56 lg:h-[466px] text-center font-custom lg:rounded-tr-[6px] rounded-bl-[6px] lg:rounded-bl-none rounded-br-[6px]'>
