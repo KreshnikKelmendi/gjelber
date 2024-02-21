@@ -76,7 +76,7 @@ const Ads = () => {
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-2 mt-2 px-5 lg:px-10'>
                 {shpalljet?.map((column, index) => (
                     <div key={index} className='flex flex-col lg:flex-row' style={{ marginTop: isLargeDevice ? column.margin : 0 }}>
-                        <div style={{ backgroundColor: column.background }} className={`lg:w-1/2 lg:h-[466px] h-fit py-10 z-50 grid rounded-tl-[6px] rounded-tr-[6px] lg:rounded-tr-none lg:rounded-bl-[6px] px-5 lg:py-20 justify-center items-center text-[${column.textColor}]`}>
+                        <div style={{ backgroundColor: column.background }} className={`lg:w-1/2 lg:h-[466px] h-fit py-10 grid rounded-tl-[6px] rounded-tr-[6px] lg:rounded-tr-none lg:rounded-bl-[6px] px-5 lg:py-20 justify-center items-center text-[${column.textColor}]`}>
                             <p className={`lg:text-[20px] uppercase font-normal text-[${column.textColor}] lg:leading-[32.32px] font-custom`}>{column.title}</p>
                             <p className={`py-5 text-[15px] leading-[25px] font-custom text-[${column.textColor}]`}>
                                  {column?.description}

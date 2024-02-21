@@ -21,7 +21,9 @@ const Header = () => {
       <div className='lg:flex bg-[#FFF6E7] items-center justify-between py-4 lg:px-10 px-5'>
         <div className='font-bold text-2xl cursor-pointer flex items-center font-custom text-gray-800'>
           <span className='text-3xl text-indigo-600 mr-1 pt-2'>
-            <img className='w-[127px] h-auto' src={logo} alt='' />
+            <Link to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
+              <img className='w-[127px] h-auto' src={logo} alt='' />
+            </Link>
           </span>
         </div>
 
