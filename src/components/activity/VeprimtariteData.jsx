@@ -59,17 +59,17 @@ const VeprimtariteData = () => {
   ];
 
   return (
-    <div className='mt-24'>
+    <div className='mt-10 lg:mt-24'>
       {dataArray.map((data, index) => (
-        <div key={index} className={`flex flex-col py-5 lg:py-0 lg:flex-row items-center px-10 lg:h-[576px] h-fit ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} ${data.bgColor}`}>
+        <div key={index} className={`flex flex-col gap-y-10 lg:gap-y-0 py-12 lg:py-0 lg:flex-row items-center px-10 lg:h-[576px] h-fit ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} ${data.bgColor}`}>
           <img
             src={data.imageSrc}
-            alt={`Veprimtarite Image ${index + 1}`}
-            className="lg:w-1/2 lg:h-[347px] w-fit h-fit object-contain"
+            alt="dataImage"
+            className={`lg:w-1/2 lg:h-[347px] w-52 h-52 object-contain ${index % 2 === 0 ? '' : 'lg:order-1 order-2'}`}
           />
-          <div className="lg:w-1/2 font-custom mt-5 lg:mt-0">
-            <p style={{ fontSize: '34px', color: data.titleColor }} className="font-bold font-custom">{data.title}</p>
-            <p style={{ color: data.descriptionColor }} className="lg:w-[575px] w-fit lg:h-[175px] mt-4 lg:pr-10 text-justify leading-[25px] tracking-[0.5%] text-[#FFF6E7] text-[18px]">{data.description}</p>
+          <div className={`lg:w-1/2 font-custom mt-5 lg:mt-0 ${index % 2 === 0 ? 'lg:pl-10' : ''}`}>
+            <p style={{ color: data.titleColor }} className="font-bold font-custom text-2xl lg:text-[34px]">{data.title}</p>
+            <p style={{ color: data.descriptionColor }} className="lg:w-[575px] w-fit lg:h-[175px] mt-4 lg:pr-10 text-justify leading-[25px] tracking-tighter lg:tracking-[0.5%] text-[#FFF6E7] text-base lg:text-[18px]">{data.description}</p>
           </div>
         </div>
       ))}

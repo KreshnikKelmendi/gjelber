@@ -47,7 +47,7 @@ const Activity = () => {
                     <div key={index} className='flex flex-col items-center' style={{ marginTop: isLargeDevice ? column.margin : 0 }}>
                         <img className='w-full h-[220px] object-cover rounded-t-[6px]' src={column.image} alt='' />
                         <div style={{ backgroundColor: column.backgroundColor }} className='w-full h-fit  rounded-b-[6px] px-5 py-10 justify-center items-center'>
-                            <p className={`text-[22px] font-normal text-[${column.textColor}] leading-[22.22px] font-custom`}>{column.content.title}</p>
+                            <p className={`text-2xl lg:text-[22px] font-normal text-[${column.textColor}] leading-[22.22px] font-custom`}>{column.content.title}</p>
                             <p className={`py-5 text-[14px] leading-[25px] font-custom text-[${column.textColor}]`}>
                                 {truncateText(column.content.description, 100)} {/* Adjust the second parameter for the desired word count */}
                             </p>

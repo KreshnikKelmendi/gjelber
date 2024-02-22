@@ -12,7 +12,7 @@ const Veprimtarite = () => {
                 <img className='w-[33px] h-[40px] object-cover' src={flowerLogo} alt='' />
                 <p className='font-custom text-3xl lg:text-[48px] text-[#006646] font-semibold mx-3'>Veprimtaritë</p>
             </div>
-            <div className='lg:w-[575px] lg:h-[225px] mt-4 font-custom tracking-[0.5%] text-[18px] leading-[25px] text-justify text-[#003249]'>
+            <div className='lg:w-[575px] lg:h-[225px] mt-4 font-custom tracking-tighter lg:tracking-[0.5%] text-[18px] leading-[25px] text-justify text-[#003249]'>
                 <p>
                    Your trusted partner for high-quality outsourcing services. Whether you're a small business 
                    owner looking to free some time or a large corporation seeking to streamline your processes
