@@ -7,7 +7,7 @@ import logo from "../assets/Layer_1.png";
 
 const DropdownMenu = ({ closeMenu }) => {
   return (
-    <ul className='absolute bg-[#FFF6E7] z-30 top-full left-0 ml-[-10px] py-5 w-[600px] h-[167px]'>
+    <ul className='absolute bg-[#FFF6E7] z-30 top-full left-0 ml-[-10px] py-5 lg:w-[650px] h-[167px]'>
       <li>
         <NavLink onClick={closeMenu} to="/komisionikomunal" className='block mx-3 my-2 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Komisioni Komunal i Aksionarëve</NavLink>
       </li>
@@ -71,9 +71,43 @@ const Header = () => {
             <div
               onMouseEnter={toggleDropdown}
               onMouseLeave={toggleDropdown}
-              className='text-gray-800 hover:text-gray-400 duration-500 active:text-red-500 cursor-pointer'
+              className='text-gray-800 hover:text-gray-400 duration-500 active:text-red-500 cursor-pointer flex items-center'
             >
-              Rreth Nesh
+              <NavLink to="/rrethnesh">Rreth Nesh</NavLink>
+              <span className='ml-2'>
+                {dropdownOpen ? (
+                 
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  className='w-4 h-4 inline-block'
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 15l7-7 7 7"
+                  />
+                </svg>
+                ) : (
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  className='w-4 h-4 inline-block'
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+                )}
+              </span>
               {dropdownOpen && <DropdownMenu closeMenu={closeMenu} />}
             </div>
           </li>
@@ -86,7 +120,7 @@ const Header = () => {
           <li className='lg:ml-8 lg:my-0 my-7 font-custom'>
             <NavLink onClick={closeMenu} to="/contact" className=' text-gray-800 hover:text-gray-400 duration-500 active:text-red-500'>Kontakti</NavLink>
           </li>
-          <Link onClick={closeMenu} to="/shpalljet">
+          <Link onClick={closeMenu} to="/shpalljet" className='z-50'>
             <Button className='text-white hover:text-white duration-500 active:text-red-500'>
               Shpalljet
             </Button>
