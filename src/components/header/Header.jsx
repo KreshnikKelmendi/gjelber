@@ -2,11 +2,34 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Button from './Button';
 import menu from "../assets/menu.png";
-import closeIcon from "../assets/remove.png";  // Replace with your close icon image
-import logo from "../assets/Layer_1.png"
+import closeIcon from "../assets/remove.png";
+import logo from "../assets/Layer_1.png";
+
+const DropdownMenu = ({ closeMenu }) => {
+  return (
+    <ul className='absolute bg-[#FFF6E7] z-30 top-full left-0 ml-[-10px] py-5 w-[600px] h-[167px]'>
+      <li>
+        <NavLink onClick={closeMenu} to="/komisionikomunal" className='block mx-3 my-2 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Komisioni Komunal i Aksionarëve</NavLink>
+      </li>
+      <li>
+        <NavLink onClick={closeMenu} to="/bordi" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Bordi i Drejtorëve</NavLink>
+      </li>
+      <li>
+        <NavLink onClick={closeMenu} to="/kryeshefi-ekzekutiv" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Kryeshefi Ekzekutiv</NavLink>
+      </li>
+      <li>
+        <NavLink onClick={closeMenu} to="" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Zyra e Auditimit të Brendshëm</NavLink>
+      </li>
+      <li>
+        <NavLink onClick={closeMenu} to="" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Struktura Organizative e Ndërmarrjes</NavLink>
+      </li>
+    </ul>
+  );
+};
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -14,11 +37,16 @@ const Header = () => {
 
   const closeMenu = () => {
     setOpen(false);
+    setDropdownOpen(false);
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
   };
 
   return (
     <div className='w-full sticky'>
-      <div className='lg:flex bg-[#FFF6E7] items-center justify-between py-4 lg:px-10 px-5'>
+      <div className='lg:flex bg-[#FFF6E7] items-center justify-between py-4 lg:px-10 px-5 z-50'>
         <div className='font-bold text-2xl cursor-pointer flex items-center font-custom text-gray-800'>
           <span className='text-3xl text-indigo-600 mr-1 pt-2'>
             <Link to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
@@ -39,8 +67,15 @@ const Header = () => {
           <li className='lg:ml-8 lg:my-0 my-7 font-custom'>
             <NavLink onClick={closeMenu} exact to="/" className='text-gray-800 hover:text-gray-400 duration-500 active:text-red-500'>Ballina</NavLink>
           </li>
-          <li className='lg:ml-8 lg:my-0 my-7 font-custom'>
-            <NavLink onClick={closeMenu} to="/rreth-nesh" className='text-gray-800 hover:text-gray-400 duration-500 active:text-red-500'>Rreth Nesh</NavLink>
+          <li className='lg:ml-8 lg:my-0 my-7 font-custom relative'>
+            <div
+              onMouseEnter={toggleDropdown}
+              onMouseLeave={toggleDropdown}
+              className='text-gray-800 hover:text-gray-400 duration-500 active:text-red-500 cursor-pointer'
+            >
+              Rreth Nesh
+              {dropdownOpen && <DropdownMenu closeMenu={closeMenu} />}
+            </div>
           </li>
           <li className='lg:ml-8 lg:my-0 my-7 font-custom'>
             <NavLink onClick={closeMenu} to="/aktivitetet" className='text-gray-800 hover:text-gray-400 duration-500 active:text-red-500'>Aktivitetet</NavLink>
@@ -52,10 +87,9 @@ const Header = () => {
             <NavLink onClick={closeMenu} to="/contact" className=' text-gray-800 hover:text-gray-400 duration-500 active:text-red-500'>Kontakti</NavLink>
           </li>
           <Link onClick={closeMenu} to="/shpalljet">
-
-          <Button className='text-white hover:text-white duration-500 active:text-red-500'>
-            Shpalljet
-          </Button>
+            <Button className='text-white hover:text-white duration-500 active:text-red-500'>
+              Shpalljet
+            </Button>
           </Link>
         </ul>
       </div>

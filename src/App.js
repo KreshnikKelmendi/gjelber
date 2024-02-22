@@ -6,6 +6,9 @@ import ActivityPage from "./components/pages/ActivityPage";
 import SinglePageOfActivity from "./components/pages/SinglePageOfActivity";
 import VeprimtaritePage from "./components/pages/VeprimtaritePage";
 import SinglePageOfAds from "./components/pages/SinglePageOfAds";
+import KomisioniKomunal from "./components/pages/KomisioniKomunal";
+import Bordi from "./components/pages/Bordi";
+import Kryeshefi from "./components/pages/Kryeshefi";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/shpalljet" element={<AdsPage />} />
             <Route path="/shpalljet/:id" element={<SinglePageOfAds />} />
+            <Route path="/komisionikomunal" element={<KomisioniKomunal />} />
+            <Route path="/bordi" element={<Bordi />} />
+            <Route path="/kryeshefi-ekzekutiv" element={<Kryeshefi />} />
           </Routes>
           </BrowserRouter>
     </>

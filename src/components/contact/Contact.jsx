@@ -4,7 +4,7 @@ import Map from './Map'
 
 const Contact = () => {
   return (
-    <div className='lg:flex w-full px-7 lg:px-10 py-8'>
+    <div className='lg:flex w-full px-5 lg:px-10 py-8'>
         <div className='lg:w-1/2'>
             <div className='w-full items-center justify-center h-[189px] rounded-[6px] flex bg-[#003249] text-white'>
                 <img className='w-[33px] h-[40px] object-cover' src={flowerLogo} alt='' />
