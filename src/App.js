@@ -9,6 +9,10 @@ import SinglePageOfAds from "./components/pages/SinglePageOfAds";
 import KomisioniKomunal from "./components/pages/KomisioniKomunal";
 import Bordi from "./components/pages/Bordi";
 import Kryeshefi from "./components/pages/Kryeshefi";
+import AboutUsPage from "./components/pages/AboutUsPage";
+import AdsBanner from "./components/ads/AdsBanner";
+import Footer from "./components/footer/Footer";
+import HomePage from "./components/pages/HomePage";
 
 function App() {
   return (
@@ -17,17 +21,22 @@ function App() {
    <BrowserRouter>
           <Header />
           <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/rrethNesh" element={<AboutUsPage />} />
+            <Route path="/komisionikomunal" element={<KomisioniKomunal />} />
+            <Route path="/bordi" element={<Bordi />} />
+            <Route path="/kryeshefi-ekzekutiv" element={<Kryeshefi />} />
             <Route path="/aktivitetet" element={<ActivityPage />} />
             <Route path="/aktivitetet/:id" element={<SinglePageOfActivity />} />
             <Route path="/veprimtarite" element={<VeprimtaritePage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/shpalljet" element={<AdsPage />} />
-            <Route path="/shpalljet/:id" element={<SinglePageOfAds />} />
-            <Route path="/komisionikomunal" element={<KomisioniKomunal />} />
-            <Route path="/bordi" element={<Bordi />} />
-            <Route path="/kryeshefi-ekzekutiv" element={<Kryeshefi />} />
+            <Route path="/shpalljet/:id" element={<SinglePageOfAds />} /> 
           </Routes>
+          <AdsBanner />
+          <Footer />
           </BrowserRouter>
+          
     </>
   );
 }

@@ -52,7 +52,7 @@ const Activity = () => {
                                 {truncateText(column.content.description, 100)} {/* Adjust the second parameter for the desired word count */}
                             </p>
                             <Link to={`/aktivitetet/${column.id}`} onClick={() => window.scrollTo({ top: 0, left: 0 })}>
-                                <button className={`border-b-[2px] font-medium text-[${column.buttonColor}] border-[${column.buttonColor}] text-[16px] font-custom`}>Më shumë</button>
+                                <button className={`border-b-[2px] font-medium text-[${column.buttonColor}] border-[${column.buttonColor}] text-[16px] font-custom hover:scale-110`}>Më shumë</button>
                             </Link>
                         </div>
                     </div>
