@@ -9,7 +9,7 @@ const KomisioniKomunal = () => {
         </p>
       </div>
       <div className='lg:w-[566px] h-[46px] mt-8'>
-        <p className='text-[20px] leading-[25px] font-normal text-[#FFF6E7] font-custom'>Anëtarët e Komisionit Komunal të Aksionarëve të Ndërmarrjes Publike Banesore janë:</p>
+        <p className='text-[20px] leading-[25px] font-normal text-[#FFF6E7] font-custom'>Anëtarët e Komisionit Komunal të Aksionarëve të Ndërmarrjes Publike "Gjelbër" janë:</p>
         <ul className="list-disc mx-3 list-inside text-[#F18934] text-[18px] font-custom my-4">
             <li>Kumrije Ramadani</li>
             <li>Rrahman Qerimi</li>
