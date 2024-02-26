@@ -76,7 +76,7 @@ const Contact = () => {
       </div>
         </div>
 
-        <div className='lg:w-1/2 mx-1 mt-5 lg:mt-0'>
+        <div className='lg:w-1/2 lg:mx-1 mt-5 lg:mt-0'>
             <Map />
         </div>
     </div>

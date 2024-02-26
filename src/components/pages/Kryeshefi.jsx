@@ -11,7 +11,7 @@ const Kryeshefi = () => {
       </div>
       <section className='w-full lg:pl-[10%] flex flex-col lg:flex-row mt-4 lg:mt-24'>
         <div>
-          <img src={noraCimili} alt='' className='object-cover w-[336px] h-[377px] rounded-[6px]' />
+          <img src={noraCimili} alt='' className='object-cover w-full lg:w-[336px] lg:h-[377px] rounded-[6px]' />
         </div>
         <div className='lg:px-16'>
           <p className='text-3xl lg:text-[48px] font-custom text-[#6ADB84] font-medium mt-4 lg:mt-16'>Nora Cimili Gagica</p>

@@ -31,7 +31,7 @@ const Activity = () => {
 
     return (
         <>
-            <div className='lg:flex w-full px-7 lg:px-10 py-8'>
+            <div className='lg:flex w-full px-5 lg:px-10 py-8'>
                 <div className='lg:flex w-full'>
                     <div className='w-full items-center justify-center h-[10vh] lg:h-[189px] rounded-[6px] flex bg-[#6ADB84] text-white'>
                         <img className='w-[33px] h-[40px] object-cover' src={flowerLogo} alt='' />
