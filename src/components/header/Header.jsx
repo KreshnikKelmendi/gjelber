@@ -73,7 +73,7 @@ const Header = () => {
               onMouseLeave={toggleDropdown}
               className='text-gray-800 hover:text-gray-400 duration-500 active:text-red-500 cursor-pointer flex items-center'
             >
-              <NavLink to="/rrethNesh">Rreth Nesh</NavLink>
+              <NavLink onClick={closeMenu} to="/rrethNesh">Rreth Nesh</NavLink>
               <span className=' ml-8 lg:ml-3'>
                 {dropdownOpen ? (
                  
