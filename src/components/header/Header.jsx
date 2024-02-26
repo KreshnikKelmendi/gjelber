@@ -7,7 +7,7 @@ import logo from "../assets/Layer_1.png";
 
 const DropdownMenu = ({ closeMenu }) => {
   return (
-    <ul className='absolute bg-[#FFF6E7] z-30 top-full left-0 ml-[-10px] py-5 lg:w-[650px] h-[167px] rounded-[6px]'>
+    <ul className='absolute bg-[#FFF6E7] z-50 top-full left-0 ml-[-10px] py-5 lg:w-[650px] h-[167px] rounded-[6px]'>
       <li>
         <NavLink onClick={closeMenu} to="/komisionikomunal" className='block mx-3 my-2 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Komisioni Komunal i Aksionarëve</NavLink>
       </li>
