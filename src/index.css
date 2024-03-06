@@ -78,3 +78,7 @@
   border-radius: 1px;
   transition: width 0.7s ease; /* Add a transition for the width property */
 }
+
+.carousel-item {
+  padding: 4px; 
+}

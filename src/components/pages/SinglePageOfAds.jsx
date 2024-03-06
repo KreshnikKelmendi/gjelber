@@ -5,7 +5,7 @@ import pdfIcon from "../assets/file.png"
 
 const SinglePageOfAds = () => {
   const { id } = useParams();
-  const ad = shpalljet.find((ad) => ad.id == id);
+  const ad = shpalljet?.find((ad) => ad.id == id);
 
   if (!ad) {
     return <div className='justify-content-center align-items-center text-center'>SHPALLJA NUK U GJET</div>;
@@ -48,6 +48,8 @@ const SinglePageOfAds = () => {
     aplikimiPDF,
     aplikimiPDFSrb
   } = ad;
+
+  console.log("aplikimiPDF:", aplikimiPDF);
 
   return (
     <div className="lg:p-10 font-custom">
@@ -135,10 +137,12 @@ const SinglePageOfAds = () => {
           )}
 
           {aplikimiPDF && ( 
-            <p className='my-4'> 
-              <a className='text-decoration-none' href={aplikimiPDF} download={aplikimiPDF}>
+            <p className='my-4 flex'> 
+           
+              <a className='underline text-blue-400' href={aplikimiPDF} download="Application.pdf">
                 SHIKO KONKURSIN NË PDF
               </a>
+              <img src={pdfIcon} className='w-6 h-6 object-contain' alt=''/>
             </p>
           )}
 
