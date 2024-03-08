@@ -3,9 +3,87 @@ import aplikacioni from "../assets/deklarata.pdf"
 import aplikacioniPunesimit from "../assets/aplikacioniPerPunesim.pdf"
 import mirembajtjeHigjiene from "../assets/mirembajtesHigjiene.pdf"
 import kapjeQenve from "../assets/Pozita-per kapjen e qeneve.pdf"
+import vozites from "../assets/07.03.2024 Vozitës shqip.pdf"
+import vozitesSrb from "../assets/07.03.2024 Vozitës srb.pdf"
+import driver from "../assets/driver.jpg"
+import zyrtareLigjore from "../assets/07.03.2024 Zyrtar i Lartë Ligjore shqi.pdf"
+import law from "../assets/law.jpg"
+import zyrtareLigjoreSrb from "../assets/07.03.2024 Zyrtar i Larte Ligjor srb.pdf"
 
 
 const shpalljet = [
+  {
+    id:12,
+    title: "Zyrtar/e i/e Lartë Ligjore",
+    adsImage: law,
+    description: 'Ndërmarrja publike lokale “Gjelbër” SH.A shpall konkurs për...',
+    background: '#FFF6E7',
+    buttonColor: "#006646",
+    textColor: "#006646",
+    imageUrl: image2,
+    publicationDate: '07.03.2024',
+    headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë:16.06.2023 si dhe Rregullores për procedurat e rekrutimit, si dhe vendimit për anulimin e konkursit me nr 308 të dt 01.02.2024   mardhënien kontraktuale dhe avansim në detyrë në ndërmarrje me nr.1338 të datë:20.06.2023, NPL”Gjelbër” Shpall këtë:",
+    titulliPozites: "Zyrtar/e i/e Lartë Ligjore",
+    kontrata: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    orari: "I plotë",
+    paga: "Niveli i pagës kategoria 6",
+    vendi: "Prishtinë",
+    diploma: "Diplomë universitare-Fakulteti Juridik",
+    patentShofer: "",
+    pervojaPunes: "3 Vite përvojë pune",
+    kushtetKualifikimit: "Të plotësojë kushtet e kualifikimit sipas nenit 17.1 si dhe të plotësojë kriteret e pavarësisë sipas nenit 17.2 pikat (d),(f),(j),(k),(l) të Ligjit nr. 03/L-087 të Ndërmarrjeve Publike dhe Plotësim Ndryshimit të LNP nr. 04/L-111 neni 13;",
+    detyra1: "udhëheq punën e gjithmbarshme të sektorit dhe ndihmon mbikëqyrësin në caktmin e objektivave dhe hartmin e planit të punës për përmbushjen e këtyre objektivave;",
+    detyra2: "menaxhon me stafin e sektorit dhe bënë ndarjen e detyrave tek varësit e tij, ofron udhëzime dhe monitoron punën e stafit për të siguruar produkte dhe shërbime cilësore;",
+    detyra3: "shqyrton propozimet e rregulloreve dhe akteve tjera që i propozohen",
+    detyra4: "asiston në hartimin e rregulloreve, urdhëresave administrative si dhe aktet tjera juridike",
+    detyra5: "siguron ndihmë juridike, shërbime dhe këshilla për drejtoritë, zyrat dhe departamentet e ndërmarrjes",
+    detyra6: "siguron që projekt rregulloret e propozuara dhe të hartuara të jenë në përputhje me standardet e ligjet përkatëse dhe politikat dhe statutin e ndërmarrjes",
+    detyra7: "siguron përfaqësimin dhe mbrojtjen e interesave të ndërmarrjes në procedurat gjyqësore dhe jokontestimore dhe bën vlerësim të rregull të stafit nën mbikëqyrje të tij dhe përkrahë zhvillimin e tyre përmes trajnimeve për të siguruar kryerjen e detyrave të tyre në nivel me standardet e kërkuara",
+    detyra8: "kryen dhe punë të tjera sipas urdhrit të Sekretarit si dhe për punën e tij/saj i përgjigjet Sekretarit",
+    aplikacioniPlotesuar:"Aplikacionin e plotësuar",
+    diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
+    aplikoni: "Kandidatët e interesuar, formularin zyrtar mund ta marrin në Arkivën e Ndërmarrjes NPL”Gjelbër” SH.A  apo ta shkarkojnë nga web faqja e internetit në adresën www.gjelber.com. Dokumentacionin mund ta paraqesin në kopje fizike në Divizionin e Burimeve Njerëzore në adresën, rr. Tahir Zajmi, pn në Prishtinë, apo përmes Postës së Kosovës. Kandidatët të cilët konkurojnë duhet të shënojnë saktë pozitën në të cilën aplikojnë, adresën, numrin e telefonit kontaktues si dhe email adresën. Aplikacionet dhe dokumentacioni i pakompletuar sipas kërkesave të përcaktuara në këtë shpallje si dhe ato që arrijnë pas skadimit të afatit të konkursit, nuk do të shqyrtohen. Shpallja është e hapur që nga data 07.03.2024 - 22.03.2024.",
+    aplikacioniNenBetim: aplikacioni,
+    aplikacioniPerPunesim: aplikacioniPunesimit,
+    aplikimiPDF: zyrtareLigjore,
+    aplikimiPDFSrb: zyrtareLigjoreSrb
+  },
+  {
+    id:11,
+    title: "VOZITËS",
+    adsImage: driver,
+    description: 'Ndërmarrja publike lokale “Gjelbër” SH.A shpall konkurs për...',
+    background: '#006646',
+    buttonColor: "#FFF6E7",
+    textColor: "#FFF6E7",
+    imageUrl: image2,
+    publicationDate: '07.03.2024',
+    headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë:16.06.2023 si dhe Rregullores për procedurat e rekrutimit, si dhe vendimit për anulimin e konkursit me nr 308 të dt 01.02.2024   mardhënien kontraktuale dhe avansim në detyrë në ndërmarrje me nr.1338 të datë:20.06.2023, NPL”Gjelbër” Shpall këtë:",
+    titulliPozites: "VOZITËS",
+    kontrata: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    orari: "I plotë",
+    paga: "Niveli i pagës 12",
+    vendi: "Prishtinë",
+    diploma: "Shkolla e mesme",
+    patentShofer: "kategoria B",
+    pervojaPunes: "2 vite përvojë pune",
+    kushtetKualifikimit: "Të plotësojë kushtet e kualifikimit sipas nenit 17.1 si dhe të plotësojë kriteret e pavarësisë sipas nenit 17.2 pikat (d),(f),(j),(k),(l) të Ligjit nr. 03/L-087 të Ndërmarrjeve Publike dhe Plotësim Ndryshimit të LNP nr. 04/L-111 neni 13;",
+    detyra1: "ofron shërbime të vozitjes për stafin e ndërmarrjes në bazë të rregullave të komunikacionit;",
+    detyra2: "bënë bartjen e drejtpërdrejtë të postes, dërgesave urgjente;",
+    detyra3: "kujdeset për mirëmbajtjen e automjetit;",
+    detyra4: "plotëson formularët lidhur me veturën zyrtare; ",
+    detyra5: "i dorëzon raportin me shkrim zyrtarit kompetent lidhur me shpenzimet dhe mirëmbajtjen;",
+    detyra6: "Udhëheqësi i Administratës mund ta ngarkojë me detyra tjera sipas nevojës;",
+    detyra7: "në rast të mungesës së zyrtarëve tjerë me urdhëresë̈ mund t’i zëvendësojë dhe të kryejë detyra të tjera",
+    detyra8: "i përgjigjet Udhëheqësit të Administratës.",
+    aplikacioniPlotesuar:"Aplikacionin e plotësuar",
+    diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
+    aplikoni: "Kandidatët e interesuar, formularin zyrtar mund ta marrin në Arkivën e Ndërmarrjes NPL”Gjelbër” SH.A  apo ta shkarkojnë nga web faqja e internetit në adresën www.gjelber.com. Dokumentacionin mund ta paraqesin në kopje fizike në Divizionin e Burimeve Njerëzore në adresën, rr. Tahir Zajmi, pn në Prishtinë, apo përmes Postës së Kosovës. Kandidatët të cilët konkurojnë duhet të shënojnë saktë pozitën në të cilën aplikojnë, adresën, numrin e telefonit kontaktues si dhe email adresën. Aplikacionet dhe dokumentacioni i pakompletuar sipas kërkesave të përcaktuara në këtë shpallje si dhe ato që arrijnë pas skadimit të afatit të konkursit, nuk do të shqyrtohen. Shpallja është e hapur që nga data 07.03.2024 - 22.03.2024.",
+    aplikacioniNenBetim: aplikacioni,
+    aplikacioniPerPunesim: aplikacioniPunesimit,
+    aplikimiPDF: vozites,
+    aplikimiPDFSrb: vozitesSrb
+  },
   {
     id:4,
     title: "Mirëmbajtës i Higjienës",

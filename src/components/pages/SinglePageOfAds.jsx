@@ -147,10 +147,11 @@ const SinglePageOfAds = () => {
           )}
 
           {aplikimiPDFSrb && ( 
-            <p className='my-4'> 
-              <a className='text-decoration-none' href={aplikimiPDFSrb} download="1.Konkursi 19.12.2023 gjuha-serbe zyrtare burimeve njerzore.pdf">
+            <p className='my-4 flex'> 
+              <a className='underline text-blue-400' href={aplikimiPDFSrb} download="SRB-Application.pdf">
                 SHIKO KONKURSIN NË GJUHËN SERBE - PDF
               </a>
+              <img src={pdfIcon} className='w-6 h-6 object-contain' alt=''/>
             </p>
           )}
         </div>

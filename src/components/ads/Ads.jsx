@@ -44,7 +44,7 @@ const AnimatedAd = ({ column, index, isLargeDevice }) => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className='bg-[#6ADB84] text-[22px] text-white justify-centeri items-center grid lg:w-1/2 w-full h-56 lg:h-[466px] text-center font-custom lg:rounded-tr-[6px] rounded-bl-[6px] lg:rounded-bl-none rounded-br-[6px]'
             >
-                <p>KONKURS</p>
+                <img src={column.adsImage} alt='' className='h-56 lg:h-[466px] w-full object-cover' />
             </motion.div>
         </motion.div>
     );

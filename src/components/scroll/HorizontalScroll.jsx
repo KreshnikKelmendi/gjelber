@@ -64,6 +64,7 @@ const HorizontalScroll = () => {
               autoPlay={true}
               autoPlaySpeed={3000}
               pauseOnHover={false}
+              
    >
       {dataItems?.map((item) => (
         <div key={item.id} className='w-full lg:h-[807px] px-10 mt-20 flex flex-col lg:flex-row' style={{ backgroundColor: item.bgColor }}>
