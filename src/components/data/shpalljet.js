@@ -2,16 +2,86 @@ import image2 from "../assets/konkursi.png"
 import aplikacioni from "../assets/deklarata.pdf"
 import aplikacioniPunesimit from "../assets/aplikacioniPerPunesim.pdf"
 import mirembajtjeHigjiene from "../assets/mirembajtesHigjiene.pdf"
-import kapjeQenve from "../assets/Pozita-per kapjen e qeneve.pdf"
+import kapjeQenve from "../assets/Konkursi punëtor fizik për kapjen e qenëve endacak 27.03.2024.pdf"
 import vozites from "../assets/07.03.2024 Vozitës shqip.pdf"
 import vozitesSrb from "../assets/07.03.2024 Vozitës srb.pdf"
 import driver from "../assets/driver.jpg"
+import dog from "../assets/kapjeqen.jpg"
 import zyrtareLigjore from "../assets/07.03.2024 Zyrtar i Lartë Ligjore shqi.pdf"
 import law from "../assets/law.jpg"
 import zyrtareLigjoreSrb from "../assets/07.03.2024 Zyrtar i Larte Ligjor srb.pdf"
+import teknikveterinar from "../assets/konkursi Teknik Veterinar.pdf"
+import veterinarian from "../assets/veterinarian.jpg"
 
 
 const shpalljet = [
+  {
+    id:5,
+    title: "Teknik Veterinar",
+    description: 'Ndërmarrja publike lokale “Gjelbër” SH.A rishpall konkurs për...',
+    background: '#002009',
+    buttonColor: "#6ADB84",
+    textColor: "#FFF6E7",
+    adsImage: veterinarian,
+    publicationDate: '27.03.2024',
+    headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë:16.06.2023 si dhe Rregullores për procedurat e rekrutimit, si dhe Kërkesës me nr Arkivi 888 të dt 27.03.2024 NPL”Gjelbër”Rishpall këtë:",
+    titulliPozites: "Teknik Veterinar",
+    kontrata: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    orari: "I plotë",
+    paga: "Niveli i pagës: 7",
+    vendi: "Prishtinë",
+    diploma: "viti i fundit i studimeve në Fakultetin e Veterinarisë ",
+    pervojaPunes: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    kushtetKualifikimit: "Të plotësojë kushtet e kualifikimit sipas nenit 17.1 si dhe të plotësojë kriteret e pavarësisë sipas nenit 17.2 pikat (d),(f),(j),(k),(l) të Ligjit nr. 03/L-087 të Ndërmarrjeve Publike dhe Plotësim Ndryshimit të LNP nr. 04/L-111 neni 13;",
+    detyra1: "Asiston Veterinarin në organizimin e punëve në qendrën për trajnimin e qeneve ",
+    detyra2: "Bën pranimin, regjistrimin dhe pastrmin e kafshës në qendër ",
+    detyra3: "Sinkronizon veprimet  me planin operativ të hartuar nga Veterinari ",
+    detyra4: "Vaksinon dhe vendos qipin në kafshë",
+    detyra5: "Sigurohet për ushqimin e kafshëve ",
+    detyra6: "Harmonizon dhe programon bilances materiale dhe shpenezuese medicinale për Njësinë punuese ",
+    detyra7: "Kryen edhe punë të tjera me urdhëresë të eprorit ",
+    detyra8: "Për punen e tij i përgjigjet eprorit",
+    aplikacioniPlotesuar:"Aplikacionin e plotësuar",
+    diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
+    aplikoni: "Kandidatët e interesuar, aplikimin mund ta bëjnë në mënyrë Elektronike (online) përmes emailit  zyrtar : aplikimet@gjelber.com. Kandidatët duhet të dërgojnë te gjithë dokumentacionin e skenuar nëpërmjet emailit. Të gjithë kandidatët që i plotësojnë kriteret e verifikimit paraprak do t’i nënshtrohen testimit me shkrim dhe intervistimit. Poentimi nga Komisioni për Rekrutim do të bëhet si në vijim:- Jetë përshkrimi (CV) i kandidatit vlerësohet deri në dhjetë (10) pikë- Testimi me shkrim deri në shtatëdhjetë (70) pikë dhe - Intervistimi deri në njëzetë (20) pikë.",
+    rekrutimi: "Procedura e rekrutimit pritet të zgjasë nga data 11.04.2024 deri më 15.05.2024 (ky afat është i përafërt dhe mund të jetë subjekt i ndryshimeve siç specifikon legjislacioni në fuqi.). Shpallja është e hapur që nga data 27.03.2024 deri më 11.04.2024 në orën 15:00. Për informata më të hollësishme mund të kontaktoni Divizionin e Burimeve Njerëzore të NPL”Gjelbër” SH.A.",
+    aplikacioniNenBetim: aplikacioni,
+    aplikacioniPerPunesim: aplikacioniPunesimit,
+    aplikimiPDF: teknikveterinar
+  },
+  {
+    id:5,
+    title: "Punëtor fizik për kapjen e qenëve (2 POZITA)",
+    description: 'Ndërmarrja publike lokale “Gjelbër” SH.A rishpall konkurs për...',
+    background: '#003249',
+    buttonColor: "#6ADB84",
+    textColor: "#FFF6E7",
+    adsImage: dog,
+    publicationDate: '27.03.2024',
+    headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë: 16.06.2023 si dhe Rregullores për procedurat e rekrutimit, Vendimit të Komisionit me numër protokolli 896 të datës 27.03.2024 si dhe Kërkesës me nr Arkivi 888 të dt 27.03.2024 NPL”Gjelbër” rishpall këtë:",
+    titulliPozites: "Punëtor fizik për kapjen e qenëve (2 Pozita)",
+    kontrata: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    orari: "I plotë",
+    paga: "Niveli i pagës: 10",
+    vendi: "Prishtinë",
+    diploma: "Shkolla e Mesme",
+    patentShofer: "Patentë shofer - Kategoria B",
+    pervojaPunes: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    kushtetKualifikimit: "Të plotësojë kushtet e kualifikimit sipas nenit 17.1 si dhe të plotësojë kriteret e pavarësisë sipas nenit 17.2 pikat (d),(f),(j),(k),(l) të Ligjit nr. 03/L-087 të Ndërmarrjeve Publike dhe Plotësim Ndryshimit të LNP nr. 04/L-111 neni 13;",
+    detyra1: "merr direktiva nga Veterinari dhe Drejtori i Operativës",
+    detyra2: "kryen shërbime për kapjen e qenëve endacak dhe i transporton në qendër",
+    detyra3: "sistemon kafshët në kafaze dhe kujdeset për mirëqenien e tyre",
+    detyra4: "kryen dhe punë të tjera duke u bazuar në veprimtarinë e ndërmarrjes dhe urdhëresës së eprorit,",
+    detyra5: "obligohet të lëviz nga njësia në njësi- zona të tjera, në raste të veçanta dhe sipas kërkesës së punës me urdhër të drejtorit të operativës",
+    detyra6: "për punën e tij i përgjigjet Veterinarit dhe Drejtorit të Operativës",
+    aplikacioniPlotesuar:"Aplikacionin e plotësuar",
+    diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
+    aplikoni: "Kandidatët e interesuar, aplikimin mund ta bëjnë në mënyrë Elektronike (online) përmes emailit  zyrtar : aplikimet@gjelber.com. Kandidatët duhet të dërgojnë te gjithë dokumentacionin e skenuar nëpërmjet emailit. Të gjithë kandidatët që i plotësojnë kriteret e verifikimit paraprak do t’i nënshtrohen testimit me shkrim dhe intervistimit. Poentimi nga Komisioni për Rekrutim do të bëhet si në vijim:- Jetë përshkrimi (CV) i kandidatit vlerësohet deri në dhjetë (10) pikë- Testimi me shkrim deri në shtatëdhjetë (70) pikë dhe - Intervistimi deri në njëzetë (20) pikë.",
+    rekrutimi: "Procedura e rekrutimit pritet të zgjasë nga data 11.04.2024 deri më 15.05.2024 (ky afat është i përafërt dhe mund të jetë subjekt i ndryshimeve siç specifikon legjislacioni në fuqi.). Shpallja është e hapur që nga data 27.03.2024 deri më 11.04.2024 në orën 15:00. Për informata më të hollësishme mund të kontaktoni Divizionin e Burimeve Njerëzore të NPL”Gjelbër” SH.A.",
+    aplikacioniNenBetim: aplikacioni,
+    aplikacioniPerPunesim: aplikacioniPunesimit,
+    aplikimiPDF: kapjeQenve
+  },
   {
     id:12,
     title: "Zyrtar/e i/e Lartë Ligjore",
@@ -116,38 +186,6 @@ const shpalljet = [
     aplikacioniNenBetim: aplikacioni,
     aplikacioniPerPunesim: aplikacioniPunesimit,
     aplikimiPDF: mirembajtjeHigjiene
-  },
-  {
-    id:5,
-    title: "Punëtor fizik për kapjen e qenëve (1 POZITË)",
-    description: 'Ndërmarrja publike lokale “Gjelbër” SH.A rishpall konkurs për...',
-    background: '#003249',
-    buttonColor: "#6ADB84",
-    textColor: "#FFF6E7",
-    imageUrl: image2,
-    publicationDate: '05.03.2024',
-    headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë:16.06.2023 si dhe Rregullores për procedurat e rekrutimit, si dhe vendimit për anulimin e konkursit me nr 308 të dt 01.02.2024   mardhënien kontraktuale dhe avansim në detyrë në ndërmarrje me nr.1338 të datë:20.06.2023, NPL”Gjelbër” Rishpall konkursin 364 të datës 07.02.2024::",
-    titulliPozites: "Punëtor fizik për kapjen e qenëve",
-    kontrata: "puna provuese 6 muaj (me mundësi vazhdimi)",
-    orari: "I plotë",
-    paga: "Niveli i pagës: 10",
-    vendi: "Prishtinë",
-    diploma: "Shkolla e Mesme",
-    patentShofer: "Patentë shofer - Kategoria B",
-    pervojaPunes: "puna provuese 6 muaj (me mundësi vazhdimi)",
-    kushtetKualifikimit: "Të plotësojë kushtet e kualifikimit sipas nenit 17.1 si dhe të plotësojë kriteret e pavarësisë sipas nenit 17.2 pikat (d),(f),(j),(k),(l) të Ligjit nr. 03/L-087 të Ndërmarrjeve Publike dhe Plotësim Ndryshimit të LNP nr. 04/L-111 neni 13;",
-    detyra1: "merr direktiva nga Veterinari dhe Drejtori i Operativës",
-    detyra2: "kryen shërbime për kapjen e qenëve endacak dhe i transporton në qendër",
-    detyra3: "sistemon kafshët në kafaze dhe kujdeset për mirëqenien e tyre",
-    detyra4: "kryen dhe punë të tjera duke u bazuar në veprimtarinë e ndërmarrjes dhe urdhëresës së eprorit,",
-    detyra5: "obligohet të lëviz nga njësia në njësi- zona të tjera, në raste të veçanta dhe sipas kërkesës së punës me urdhër të drejtorit të operativës",
-    detyra6: "për punën e tij i përgjigjet Veterinarit dhe Drejtorit të Operativës",
-    aplikacioniPlotesuar:"Aplikacionin e plotësuar",
-    diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
-    aplikoni: "Kandidatët e interesuar, formularin zyrtar mund ta marrin në Arkivën e Ndërmarrjes NPL”Gjelbër” SH.A  apo ta shkarkojnë nga web faqja e internetit në adresën www.gjelber.com. Dokumentacionin mund ta paraqesin në kopje fizike në Divizionin e Burimeve Njerëzore në adresën, rr. Tahir Zajmi, pn në Prishtinë, apo përmes Postës së Kosovës. Kandidatët të cilët konkurojnë duhet të shënojnë saktë pozitën në të cilën aplikojnë, adresën, numrin e telefonit kontaktues si dhe email adresën. Shpallja është e hapur që nga data 10.01.2024 - 25.01.2024.",
-    aplikacioniNenBetim: aplikacioni,
-    aplikacioniPerPunesim: aplikacioniPunesimit,
-    aplikimiPDF: kapjeQenve
   },
   {
     id:10,

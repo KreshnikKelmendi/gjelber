@@ -36,7 +36,7 @@ const AfterSlider = () => {
           </p>
         </motion.div>
         <motion.div className='lg:w-1/2 mt-8 lg:mt-0' initial={{ opacity: 0, x: 50 }} animate={controls}>
-          <img src={greenPicture} alt='' className='lg:h-[1030px] object-cover' />
+          <img src={greenPicture} alt='' className='w-full lg:h-[1030px] object-cover' />
         </motion.div>
       </motion.div>
     );

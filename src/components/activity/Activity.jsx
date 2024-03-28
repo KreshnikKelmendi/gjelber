@@ -42,7 +42,7 @@ const Activity = () => {
                     </div>
                 </div>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mt-2 px-7 lg:px-10'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mt-2 px-5 lg:px-10'>
                 {data?.map((column, index) => (
                     <div key={index} className='flex flex-col items-center' style={{ marginTop: isLargeDevice ? column.margin : 0 }}>
                         <img className='w-full h-[220px] object-cover rounded-t-[6px]' src={column.image} alt='' />
