@@ -18,7 +18,7 @@ const shpalljet = [
   {
     id:5,
     title: "Teknik Veterinar",
-    description: 'Ndërmarrja publike lokale “Gjelbër” SH.A rishpall konkurs për...',
+    description: 'Ndërmarrja publike lokale “Gjelbër” SH.A shpall konkurs për...',
     background: '#002009',
     buttonColor: "#6ADB84",
     textColor: "#FFF6E7",
@@ -50,7 +50,7 @@ const shpalljet = [
     aplikimiPDF: teknikveterinar
   },
   {
-    id:5,
+    id:15,
     title: "Punëtor fizik për kapjen e qenëve (2 POZITA)",
     description: 'Ndërmarrja publike lokale “Gjelbër” SH.A rishpall konkurs për...',
     background: '#003249',
