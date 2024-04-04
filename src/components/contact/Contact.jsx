@@ -11,9 +11,9 @@ const Contact = () => {
                 <p className='font-custom text-3xl lg:text-[48px] font-normal mx-3'>Kontakti</p>
             </div>
             <div className='lg:w-[545px] mt-4'>
-                <p className='lg:text-lg font-normal leading-[24px] text-[#003249]'>Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.</p>
+                <p className='lg:text-lg font-normal leading-[24px] text-[#003249]'>Për cdo informatë, hollësi apo detaje tjera të nevojshme mos ngurroni të na shkruani në e-mail adresen tonë zyrtare : <b>info@gjelber.com</b></p>
             </div>
-            <div initial="hidden" className="w-full lg:w-1/2 flex">
+            {/* <div initial="hidden" className="w-full lg:w-1/2 flex">
         <form className="w-full mt-5 lg:mt-[50px] font-custom text-lg">
           <div className="mb-[11px]">
             <input
@@ -73,7 +73,7 @@ const Contact = () => {
            
           </div>
         </form>
-      </div>
+      </div> */}
         </div>
 
         <div className='lg:w-1/2 lg:mx-1 mt-5 lg:mt-0'>

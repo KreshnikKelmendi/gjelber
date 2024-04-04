@@ -1,5 +1,8 @@
 import React from 'react';
 import logoFooter from '../assets/logofooter.png';
+import { Link } from 'react-router-dom';
+import instagramIcon from "../assets/instagram.png"
+import facebookIcon from "../assets/facebook.png"
 
 const Footer = () => {
   return (
@@ -7,33 +10,50 @@ const Footer = () => {
       <div className='flex flex-col lg:flex-row lg:space-x-28'>
       <div className='mx-auto'>
         <img src={logoFooter} alt='' className='object-contain w-[214px] h-[47px]' />
-        <p className='text-[15px] w-[178px] leading-[17.8px] mt-3 text-[#FFF6E7] font-normal font-custom'>we connect ton the world with awsome companies.</p>
+        <p className='text-[15px] w-[178px] leading-[17.8px] mt-3 text-[#FFF6E7] font-normal font-custom'>Bashkohu në Mbrojtjen e Mjedisit!
+
+</p>
         </div>
         <nav className='lg:ml-4 mt-6'>
           <ul className='flex flex-col lg:flex-row lg:space-x-28 space-y-12 lg:space-y-0'>
             <li>
               <a href='/about-gjelber' className='font-custom uppercase hover:text-gray-300 text-[15px] text-[#006646]'>
-                About Gjelber
+                Gjelbër
               </a>
               <ul className=''>
                 <li className='mt-4'>
-                  <a href='/rreth-nesh' className='text-white hover:text-gray-300'>
-                    Rreth Nesh
-                  </a>
-                </li>
-                <li className='mt-4'>
-                  <a href='/ballina' className='text-white hover:text-gray-300'>
+                  <Link to="/"onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
                     Ballina
-                  </a>
+                  </Link>
                 </li>
                 <li className='mt-4'>
-                  <a href='/faq' className='text-white hover:text-gray-300'>
-                    FAQ'S
-                  </a>
+                <Link to="/rrethNesh" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
+                    Rreth Nesh
+                  </Link>
+                </li>
+                <li className='mt-4'>
+                <Link to="/aktivitetet" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
+                    Aktivitetet
+                  </Link>
+                </li>
+                <li className='mt-4'>
+                <Link to="/veprimtarite" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
+                    Veprimtaritë
+                  </Link>
+                </li>
+                <li className='mt-4'>
+                <Link to="/contact" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
+                    Kontakti
+                  </Link>
+                </li>
+                <li className='mt-4'>
+                <Link to="/shpalljet" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
+                    Shpalljet
+                  </Link>
                 </li>
               </ul>
             </li>
-            <li>
+            {/* <li>
               <a href='/products' className='font-custom uppercase hover:text-gray-300 text-[15px] text-[#006646]'>
                 Products
               </a>
@@ -49,24 +69,29 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> */}
 
-            <li className=''>
-              <a href='/products' className='font-custom uppercase hover:text-gray-300 text-[15px] text-[#006646]'>
-                NOT QUITE READY FOR SURVEY?
-              </a>
-              <ul className='flex flex-col space-y-2'>
-                <li className='mt-4'>
-                  <a href='/category-1' className='text-white hover:text-gray-300'>
-                    Join our online no-community for free. No spam, ever.
-                  </a>
-                </li>
-                <li className='flex flex-col justify-center items-center lg:flex-row lg:space-x-2 space-y-4'>
-                  <input type='email' placeholder='Your Email' className='mt-4 w-64 lg:w-[279px] lg:h-[52px] border-gray-300 p-2 rounded-[4px]' />
-                  <button className='bg-[#006646] w-64 lg:w-[144px] lg:h-[52px] text-white p-2 rounded-[4px]'>Subscribe</button>
-                </li>
-              </ul>
-            </li>
+<li className=''>
+  <a href='/products' className='font-custom uppercase hover:text-gray-300 text-[15px] text-[#006646]'>
+    Na ndiqni në rrjetet tona sociale.
+  </a>
+  <ul className='flex flex-col space-y-2'>
+    {/* <li className='mt-4'>
+      <a href='/category-1' className='text-white hover:text-gray-300'>
+        Join our online no-community for free. No spam, ever.
+      </a>
+    </li> */}
+    <li className='flex flex-row justify-center items-center lg:space-x-2 mt-4'>
+      <a href='https://www.instagram.com/gjelber.sha/' target='_blank' className='block'>
+        <img src={instagramIcon} alt='Instagram' className='h-10 w-10 hover:text-gray-300' />
+      </a>
+      <a href='https://www.facebook.com/profile.php?id=100065067662030' target='_blank' className='block'>
+        <img src={facebookIcon} alt='Facebook' className='h-10 w-10 hover:text-gray-300' />
+      </a>
+    </li>
+  </ul>
+</li>
+
           </ul>
         </nav>
       </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import sliderImage1 from "../assets/sliderHome.png";
-import sliderImage2 from "../assets/sliderHome2.png";
+import sliderImage2 from "../assets/slide2.jpg";
 
 const SliderHome = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,8 +15,8 @@ const SliderHome = () => {
     },
 
     {
-      title: "Another Slide Title",
-      content: "Another Slide Content",
+      title: "Bashkohu në Mbrojtjen e Mjedisit!",
+      content: "Prishtina më Gjelbër jeta më e bukur.",
       image: sliderImage2,
       backgroundColor: '#003249',
       textColor: '#6ADB84', 

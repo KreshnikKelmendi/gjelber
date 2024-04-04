@@ -1,9 +1,9 @@
-import yourImage1 from "../assets/pinkNature.jpg"
-import yourImage2 from "../assets/nationalLibrary.jpg"
+import yourImage1 from "../assets/1.jpg"
+import yourImage2 from "../assets/2.jpg"
 import yourImage3 from "../assets/Parku_Germia.jfif"
-import yourImage4 from "../assets/tegan-mierle-fDostElVhN8-unsplash 1.png"
-import yourImage5 from "../assets/dimitar-donovski-yrjB4dYWUZU-unsplash 1.png"
-import yourImage6 from "../assets/Abbey_Road_zebra_crossing,_24-11-2015 1.png"
+import yourImage4 from "../assets/3.jpg"
+import yourImage5 from "../assets/4.jpg"
+import yourImage6 from "../assets/5.jpg"
 
 const data = [
     {

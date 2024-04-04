@@ -32,7 +32,13 @@ const AfterSlider = () => {
             Prishtina e freskët <span className='text-[#6ADB84] font-bold'>frymon gjelbër!</span>
           </p>
           <p className='lg:pr-16 mt-5 text-[18px] leading-[25px] font-normal text-justify text-[#003249] tracking-tighter'>
-            Your trusted partner for high-quality outsourcing services. Whether you're a small business owner looking to free some time or a large corporation seeking to streamline your processes and increase efficiency, we have the expertise and experience to help you succeed. we have the expertise and experience to help you succeed. Whether you're a small business owner looking to free up some time or a large corporation seeking to streamline your processes and increase efficiency, we have the expertise and experience to help you succeed.
+          Ndërmarrja NPL “Gjelbër” Sh.A. vazhdon me strategji të qarta 
+të marketingut, shërbime të specializuara dhe angazhim të ekipit të kualifikuar, pritet që ky 
+biznes të ketë sukses dhe të dominoj në tregun e mirëmbajtjes dhe projektimit të 
+hapësirave të gjelbra. Përpjekjet e vazhdueshme për përmirësim dhe zgjerim do të 
+ndihmojnë në rritjen e qëndrueshmërisë dhe suksesit të biznesit.
+Ndërmarrja “Gjelbër” është e fokusuar që përmes veprimtarisë të saj të kontribuoj në 
+përmirësimin e mirëqenies të ambientit dhe qytetarit.        
           </p>
         </motion.div>
         <motion.div className='lg:w-1/2 mt-8 lg:mt-0' initial={{ opacity: 0, x: 50 }} animate={controls}>

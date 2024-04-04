@@ -10,7 +10,7 @@ const VeprimtariteData = () => {
   const dataArray = [
     { 
         imageSrc: image1, 
-        title: 'Qendra e Kompostit', 
+        title: 'Njësia për mirëmbajtjen e Parkut të Gërmisë dhe Qendrës të Kompostimit', 
         titleColor: "#6ADB84", 
         descriptionColor: "#FFF6E7", 
         description: "Qendra e Kompostimit gjendet në fshatin Butovc afër Parkut të Gërmisë. Të gjitha mbetjet organike të grumbulluara nga mirëmbajtja e hapësirave gjelbruese si gjethet, degët dhe rrënjët e thata, dërgohen në Qendër të Kompostimit për tu shnëdrruar në kompost për tu përdorur për pleh dekorativ dhe pleh organik më pas në hapësirat e njejta.", 

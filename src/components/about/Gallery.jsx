@@ -2,15 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import gallery1 from '../assets/galery1.png';
+import gallery2 from '../assets/firstGjelber.jpg';
 
 const gallery = [
   { id: 1, type: 'image', src: gallery1 },
   { id: 2, type: 'text', content: 'Bashkohu në mbrojtjen e mjedisit', bgColor: 'bg-[#6ADB84]' },
-  { id: 3, type: 'image', src: gallery1 },
-  { id: 4, type: 'text', content: 'Bashkohu në mbrojtjen e mjedisit', bgColor: 'bg-[#003249]' },
+  { id: 3, type: 'image', src: gallery2 , },
+  { id: 4, type: 'text', content: 'Prishtina më Gjelbër jeta më e bukur.', bgColor: 'bg-[#6ADB97]' },
   { id: 5, type: 'text', content: 'Bashkohu në mbrojtjen e mjedisit', bgColor: 'bg-[#006646]' },
   { id: 6, type: 'image', src: gallery1 },
-  { id: 7, type: 'text', content: 'Bashkohu në mbrojtjen e mjedisit', bgColor: 'bg-[#FFF6E7]' },
+  { id: 7, type: 'text', content: 'Prishtina më Gjelbër jeta më e bukur.', bgColor: 'bg-[#FFF6E7]' },
   { id: 8, type: 'image', src: gallery1 },
 ];
 

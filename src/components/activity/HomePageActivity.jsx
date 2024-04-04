@@ -2,35 +2,43 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import flowerLogo from '../assets/Vector.png';
-import image1 from '../assets/carousel1.png';
-import image2 from '../assets/carousel2.png';
-import image3 from '../assets/carousel3.png'
+import image1 from '../assets/1.jpg';
+import image2 from '../assets/2.jpg';
+import image3 from '../assets/3.jpg'
+import image4 from "../assets/4.jpg"
+import image5 from "../assets/5.jpg"
+import image6 from "../assets/6.jpg"
 
 const items = [
   {
-    title: 'Horem disum fa veana 1997  trun borte',
-    description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
+    // title: 'Horem disum fa veana 1997  trun borte',
+    // description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
     image: image1,
   },
   {
-    title: 'Horem disum fa veana 1997  trun borte',
-    description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
+    // title: 'Horem disum fa veana 1997  trun borte',
+    // description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
     image: image2,
   },
   {
-    title: 'Gjelbër / Aktivitetet / Prishtina e pastër',
-    description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
+    // title: 'Gjelbër / Aktivitetet / Prishtina e pastër',
+    // description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
     image: image3,
   },
   {
-    title: 'Horem disum fa veana 1997  trun borte',
-    description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
-    image: image1,
+    // title: 'Horem disum fa veana 1997  trun borte',
+    // description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
+    image: image4,
   },
   {
-    title: 'Horem disum fa veana 1997  trun borte',
-    description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
-    image: image1,
+    // title: 'Horem disum fa veana 1997  trun borte',
+    // description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
+    image: image5,
+  },
+  {
+    // title: 'Horem disum fa veana 1997  trun borte',
+    // description: 'Your trusted partner for high-quality outsourcing services. Whether you are a small business owner looking to.',
+    image: image6,
   },
   // Add more items as needed
 ];
@@ -71,10 +79,10 @@ const HomePageActivity = () => {
       >
         {items?.map((item, index) => (
           <div key={index} className='carousel-item mt-5 lg:mt-16'>
-            <img src={item.image} alt={item.title} className='lg:w-[336px] lg:h-[294px] object-cover rounded-[6px]' />
+            <img src={item.image} alt={item.title} className='lg:w-[336px] lg:h-[334px] object-cover rounded-[6px]' />
             <h3 className='text-[#6ADB84] text-[22px] font-custom font-normal leading-[22.22px] mt-5'>{item.title}</h3>
             <p className='lg:w-[256px] text-[14px] mt-5 text-[#FFF6E7] font-custom font-normal leading-[25px]'>{item.description}</p>
-            <button className='mt-5 text-[#F18934] text-[16px] font-medium font-custom border-b border-[#F18934] hover:scale-125'>Më shumë</button>
+            {/* <button className='mt-5 text-[#F18934] text-[16px] font-medium font-custom border-b border-[#F18934] hover:scale-125'>Më shumë</button> */}
           </div>
         ))}
       </Carousel>
