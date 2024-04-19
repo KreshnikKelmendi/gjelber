@@ -18,10 +18,10 @@ const DropdownMenu = ({ closeMenu }) => {
         <NavLink onClick={closeMenu} to="/kryeshefi-ekzekutiv" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Kryeshefi Ekzekutiv</NavLink>
       </li>
       <li>
-        <NavLink onClick={closeMenu} to="" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Zyra e Auditimit të Brendshëm</NavLink>
+        <NavLink onClick={closeMenu} to="/korniza-ligjore" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Korniza Ligjore</NavLink>
       </li>
       <li>
-        <NavLink onClick={closeMenu} to="" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Struktura Organizative e Ndërmarrjes</NavLink>
+        <NavLink onClick={closeMenu} to="/struktura-organizative-e-ndermarrjes" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Struktura Organizative e Ndërmarrjes</NavLink>
       </li>
     </ul>
   );

@@ -13,6 +13,8 @@ import AboutUsPage from "./components/pages/AboutUsPage";
 import AdsBanner from "./components/ads/AdsBanner";
 import Footer from "./components/footer/Footer";
 import HomePage from "./components/pages/HomePage";
+import KornizaLigjore from "./components/pages/KornizaLigjore";
+import StrukturaOrganizativeNdermarrjes from "./components/pages/StrukturaOrganizativeNdermarrjes";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/rrethNesh" element={<AboutUsPage />} />
             <Route path="/komisionikomunal" element={<KomisioniKomunal />} />
+            <Route path="/korniza-ligjore" element={<KornizaLigjore />} />
+            <Route path="/struktura-organizative-e-ndermarrjes" element={<StrukturaOrganizativeNdermarrjes />} />
             <Route path="/bordi" element={<Bordi />} />
             <Route path="/kryeshefi-ekzekutiv" element={<Kryeshefi />} />
             <Route path="/aktivitetet" element={<ActivityPage />} />
