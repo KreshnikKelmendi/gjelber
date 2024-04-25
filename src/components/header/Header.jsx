@@ -15,7 +15,7 @@ const DropdownMenu = ({ closeMenu }) => {
         <NavLink onClick={closeMenu} to="/bordi" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Bordi i Drejtorëve</NavLink>
       </li>
       <li>
-        <NavLink onClick={closeMenu} to="/kryeshefi-ekzekutiv" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Kryeshefi Ekzekutiv</NavLink>
+        <NavLink onClick={closeMenu} to="/menaxhmenti-i-ndermarrjes" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Menaxhmenti i Ndërmarrjes</NavLink>
       </li>
       <li>
         <NavLink onClick={closeMenu} to="/korniza-ligjore" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Korniza Ligjore</NavLink>

@@ -1,8 +1,8 @@
 import React from 'react';
 import logoFooter from '../assets/logofooter.png';
 import { Link } from 'react-router-dom';
-import instagramIcon from "../assets/instagram.png"
-import facebookIcon from "../assets/facebook.png"
+import instagramIcon from "../assets/instagramLogs.png"
+import facebookIcon from "../assets/fb-logo.png"
 
 const Footer = () => {
   return (
@@ -53,23 +53,38 @@ const Footer = () => {
                 </li>
               </ul>
             </li>
-            {/* <li>
-              <a href='/products' className='font-custom uppercase hover:text-gray-300 text-[15px] text-[#006646]'>
-                Products
-              </a>
+            <li>
+              <Link to="/rrethNesh" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='font-custom uppercase hover:text-gray-300 text-[15px] text-[#006646]'>
+                Rreth Nesh
+              </Link>
               <ul className=''>
                 <li className='mt-4'>
-                  <a href='/category-1' className='text-white hover:text-gray-300'>
-                    Category 1
-                  </a>
+                  <Link to="/komisioniKomunal" onClick={() => window.scrollTo({ top: 0, left: 0 })} href='/category-1' className='text-white hover:text-gray-300'>
+                    Komisioni Komunal i Aksionarëve
+                  </Link>
                 </li>
                 <li className='mt-4'>
-                  <a href='/category-2' className='text-white hover:text-gray-300'>
-                    Category 2
-                  </a>
+                <Link to="/bordi" onClick={() => window.scrollTo({ top: 0, left: 0 })} href='/category-1' className='text-white hover:text-gray-300'>
+                    Bordi i Drejtorëve
+                  </Link>
+                </li>
+                <li className='mt-4'>
+                <Link to="/menaxhmenti-i-ndermarrjes" onClick={() => window.scrollTo({ top: 0, left: 0 })} href='/category-1' className='text-white hover:text-gray-300'>
+                    Menaxhmenti i Ndërmarrjes
+                  </Link>
+                </li>
+                <li className='mt-4'>
+                <Link to="/korniza-ligjore" onClick={() => window.scrollTo({ top: 0, left: 0 })} href='/category-1' className='text-white hover:text-gray-300'>
+                    Korniza Ligjore
+                  </Link>
+                </li>
+                <li className='mt-4'>
+                <Link to="/struktura-organizative-e-ndermarrjes" onClick={() => window.scrollTo({ top: 0, left: 0 })} href='/category-1' className='text-white hover:text-gray-300'>
+                    Struktura Organizative e Ndërmarrjes
+                  </Link>
                 </li>
               </ul>
-            </li> */}
+            </li>
 
 <li className=''>
   <a href='/products' className='font-custom uppercase hover:text-gray-300 text-[15px] text-[#006646]'>
@@ -82,11 +97,11 @@ const Footer = () => {
       </a>
     </li> */}
     <li className='flex flex-row justify-center items-center lg:space-x-2 mt-4'>
-      <a href='https://www.instagram.com/gjelber.sha/' target='_blank' className='block'>
-        <img src={instagramIcon} alt='Instagram' className='h-10 w-10 hover:text-gray-300' />
+      <a href='https://www.instagram.com/gjelber.sha/' target='_blank' rel="noreferrer" className='block'>
+        <img src={instagramIcon} alt='Instagram' className='h-10 w-10 object-cover hover:text-gray-300' />
       </a>
-      <a href='https://www.facebook.com/profile.php?id=100065067662030' target='_blank' className='block'>
-        <img src={facebookIcon} alt='Facebook' className='h-10 w-10 hover:text-gray-300' />
+      <a href='https://www.facebook.com/profile.php?id=100065067662030' target='_blank' rel="noreferrer" className='block'>
+        <img src={facebookIcon} alt='Facebook' className='h-10 w-10 object-cover hover:text-gray-300' />
       </a>
     </li>
   </ul>

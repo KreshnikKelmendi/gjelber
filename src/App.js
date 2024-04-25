@@ -29,7 +29,7 @@ function App() {
             <Route path="/korniza-ligjore" element={<KornizaLigjore />} />
             <Route path="/struktura-organizative-e-ndermarrjes" element={<StrukturaOrganizativeNdermarrjes />} />
             <Route path="/bordi" element={<Bordi />} />
-            <Route path="/kryeshefi-ekzekutiv" element={<Kryeshefi />} />
+            <Route path="/menaxhmenti-i-ndermarrjes" element={<Kryeshefi />} />
             <Route path="/aktivitetet" element={<ActivityPage />} />
             <Route path="/aktivitetet/:id" element={<SinglePageOfActivity />} />
             <Route path="/veprimtarite" element={<VeprimtaritePage />} />
