@@ -238,7 +238,7 @@ const SinglePageOfAds = () => {
           </section>
 
           <section className="py-8">
-            <div className="max-w-4xl mx-auto">
+            <div className=" mx-auto">
               <h6 className="font-semibold text-center uppercase text-gray-800 mb-8">Detyrat dhe Përgjegjësitë Kryesore</h6>
               <ul className="list-disc list-inside text-gray-700 my-4">
                 <li>{detyra1}</li>
@@ -257,7 +257,7 @@ const SinglePageOfAds = () => {
           </section>
 
           <section className="py-8">
-            <div className="max-w-4xl mx-auto">
+            <div className=" mx-auto">
               <h6 className="font-semibold text-center uppercase text-gray-800 mb-8">Informata për Procedurën e Konkurimit</h6>
               <ul className="list-disc list-inside text-gray-700 my-4">
                 <li>Aplikantët e interesuar për këtë vend pune duhet të bashkangjesin këto dokumente:</li>
