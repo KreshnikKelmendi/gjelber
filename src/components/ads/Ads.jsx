@@ -98,6 +98,7 @@ import flowerLogo from "../assets/Vector.png";
 import untitled from "../assets/Untitle2223d-1 1.png";
 import { Link } from 'react-router-dom';
 import { shpalljet } from '../data/shpalljet';
+import pdfIcon from "../assets/pdf.png"
 
 const AnimatedAd = ({ column, index, isLargeDevice }) => {
     const [ref, inView] = useInView({
@@ -122,14 +123,22 @@ const AnimatedAd = ({ column, index, isLargeDevice }) => {
                 style={{ backgroundColor: column.background }}
                 className={`lg:w-1/2 lg:h-[466px] h-fit py-10 grid rounded-tl-[6px] rounded-tr-[6px] lg:rounded-tr-none lg:rounded-bl-[6px] px-5 lg:py-20 justify-center items-center text-[${column.textColor}]`}
             >
-                <p className={`lg:text-[20px] uppercase font-normal text-[${column.textColor}] lg:leading-[32.32px] font-custom`}>{column.title}</p>
-                <p className={`py-5 text-[15px] leading-[25px] font-custom text-[${column.textColor}]`}>
-                    {column?.description}
+                 <p className={`text-[12px] border-b border-b-green-600 w-fit leading-[25px] font-custom text-[${column.textColor}]`}>
+                    KONKURS
                 </p>
-                <p className={`py-5 text-[12px] leading-[25px] font-custom text-gray-500`}>Data e publikimit: {column.publicationDate}</p>
-                <Link to={`/shpalljet/${column.id}`} onClick={() => window.scrollTo({ top: 0, left: 0 })}>
-                    <button className={`border-[2px] rounded-[4px] px-8 py-1 font-medium text-[${column.buttonColor}] border-[${column.buttonColor}] hover:bg-white hover:text-black hover:border-none text-[16px] font-custom`}>Më shumë</button>
-                </Link>
+                <p className={`lg:text-[18px] uppercase font-normal text-[${column.textColor}] lg:leading-[32.32px] font-custom`}>{column.title}</p>
+               
+                <p className={`py-5 text-[12px] leading-[25px] font-custom text-gray-300`}>Data e publikimit: <b>{column.publicationDate}</b></p>
+                
+                <a className='text-[12px] text-blue-400 hover:text-white hover:scale-105 hover:duration-500' href={column.aplikacioniPerPunesim} target="_blank" rel="noopener noreferrer">
+                    SHKARKO APLIKACIONIN PËR PUNËSIM
+                </a>
+                <a className='text-[12px] text-blue-400 hover:text-white hover:scale-105 hover:duration-500' href={column.aplikacioniNenBetim} target="_blank" rel="noopener noreferrer">
+                SHKARKO DEKLARATËN NËN BETIM
+              </a>
+                <a className='flex underline text-[14px] text-blue-400 hover:text-white hover:scale-105 hover:duration-500 hover:no-underline' href={column.aplikimiPDF} target="_blank" rel="noopener noreferrer">
+                    SHIKO KONKURSIN<img className="w-5 h-5 object-contain ml-[5px]" src={pdfIcon} alt="" />
+                </a>            
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}

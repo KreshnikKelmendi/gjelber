@@ -163,7 +163,7 @@ const shpalljet = [
     id:17,
     title: "Roje e pyjeve- Pylltar",
     description: 'Ndërmarrja publike lokale “Gjelbër” SH.A shpall konkurs për...',
-    background: '#F18934',
+    background: '#003249',
     buttonColor: "#003249",
     textColor: "#FFF6E7",
     adsImage: forest,
