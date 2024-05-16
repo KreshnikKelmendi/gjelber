@@ -24,7 +24,7 @@
 //             Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin 
 //             e vendeve dhe detyrave të punës nr.1292 të datë:16.06.2023 si dhe 
 //             Rregullores për procedurat e rekrutimit, si dhe vendimit për anulimin e 
-//             konkursit me nr 308 të dt 01.02.2024   mardhënien kontraktuale dhe avansim në detyrë në ndërmarrje 
+//             konkursit me nr 308 të dt 01.02.2024 mardhënien kontraktuale dhe avansim në detyrë në ndërmarrje 
 //             me nr.1338 të datë:20.06.2023, NPL”Gjelbër” Shpall këtë:
 //           </p>
 //           <ul className="list-disc list-inside text-gray-700 my-4">
@@ -105,9 +105,16 @@
 //                   <li>Kopjen e letërnjoftimit.</li>
 //                 </ul>
 //               </ul>
-//               <p className='py-6'></p>
+//                {data?.data?.attributes?.proceduraAplikimit && (
+//                   <p className='py-6'>{data?.data?.attributes?.proceduraAplikimit}</p>
+//                 )}
+//                  {data?.data?.attributes?.datatAplikimit && (
+//                   <p className='py-6'>{data?.data?.attributes?.datatAplikimit}</p>
+//                 )}
 //             </div>
 //           </section>
+
+        
 
 //           {aplikacioniNenBetim && (
 //             <p className='my-2'> 
@@ -126,20 +133,22 @@
 //           )}
 
       
-//           <p className='my-4 flex'>
-//             <a className='underline cursor-pointer text-blue-400 hover:text-green-700' href={`${apiUrl}${data?.data?.attributes?.aplikacioniPDF?.data[0]?.attributes?.url}`} target='_blank'  rel="noreferrer" download="Application.pdf">
-//               SHIKO KONKURSIN NË PDF
-//             </a>
-//             <img src={pdfIcon} className='w-6 h-6 ml-1 object-contain' alt=''/>
-//           </p>
-
-//        <p className='my-4 flex'>
-//             <a className='underline cursor-pointer text-blue-400 hover:text-green-700' href={`${apiUrl}${data?.data?.attributes?.aplikacioniPdfSrb?.data[0]?.attributes?.url}`} target='_blank'  rel="noreferrer" download="Application.pdf">
-//                 SHIKO KONKURSIN NË GJUHËN SERBE - PDF
-//             </a>
-//             <img src={pdfIcon} className='w-6 h-6 ml-1 object-contain' alt=''/>
-//           </p>
-
+//           {data?.data?.attributes?.aplikacioniPDF?.data?.length > 0 && (
+//             <p className='my-4 flex'>
+//               {/* Link to open the PDF file in a new tab */}
+//               <a
+//                 className='underline cursor-pointer text-blue-400 hover:text-green-700'
+//                 href={`${apiUrl}${data?.data?.attributes?.aplikacioniPDF?.data[0]?.attributes?.url}`}
+//                 target='_blank'
+//                 rel='noreferrer'
+//                 download='Application.pdf'
+//               >
+//                 SHIKO KONKURSIN NË PDF 
+//               </a>
+//               {/* PDF icon image */}
+//               <img src={pdfIcon} className='w-6 h-6 ml-1 object-contain' alt='' />
+//             </p>
+//           )}
           
 //         </div>
 //       </div>

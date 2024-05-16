@@ -39,7 +39,7 @@ const Kryeshefi = () => {
               Përkushtimi i pandryshuar i Norës për të krijuar qytete më të gjelbra dhe më të qëndrueshme
               thekson vizionin e saj për një të ardhme të qëndrueshme. Përmes udhëheqjes së saj, ajo
               vazhdon të inspirojë ndryshime pozitive dhe të shtyjë inovacion në planifikim urban dhe
-              ruajtjen e mjedisit, lënë një shenjë të pashlyeshme në komunitetet që shërben.
+              ruajtjen e mjedisit.
           </p>
         </div>
       </section>
