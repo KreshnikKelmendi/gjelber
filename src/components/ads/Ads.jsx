@@ -121,24 +121,31 @@ const AnimatedAd = ({ column, index, isLargeDevice }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 style={{ backgroundColor: column.background }}
-                className={`lg:w-1/2 lg:h-[466px] h-fit py-10 grid rounded-tl-[6px] rounded-tr-[6px] lg:rounded-tr-none lg:rounded-bl-[6px] px-5 lg:py-20 lg:justify-center items-center text-[${column.textColor}]`}
-            >
+                className={`lg:w-1/2 lg:h-[466px] 2xl:h-[530px] h-fit py-10 grid rounded-tl-[6px] rounded-tr-[6px] lg:rounded-tr-none lg:rounded-bl-[6px] px-5 lg:py-20 lg:justify-center items-center text-[${column.textColor}]`}
+            >   
                  <p className={`text-[12px] border-b border-b-green-600 w-fit leading-[25px] font-custom text-[${column.textColor}]`}>
-                    KONKURS
+                    {column.konkurs}
                 </p>
                 <p className={`lg:text-[18px] uppercase font-normal text-[${column.textColor}] lg:leading-[32.32px] font-custom`}>{column.title}</p>
                
                 <p className={`py-5 text-[12px] leading-[25px] font-custom text-gray-300`}>Data e publikimit: <b>{column.publicationDate}</b></p>
                 
+                {column.aplikacioniPerPunesim && (
                 <a className='text-[12px] text-blue-400 hover:text-white hover:scale-105 hover:duration-500' href={column.aplikacioniPerPunesim} target="_blank" rel="noopener noreferrer">
                     SHKARKO APLIKACIONIN PËR PUNËSIM
                 </a>
+                )}
+                {column.aplikacioniNenBetim && (
                 <a className='text-[12px] text-blue-400 hover:text-white hover:scale-105 hover:duration-500' href={column.aplikacioniNenBetim} target="_blank" rel="noopener noreferrer">
-                SHKARKO DEKLARATËN NËN BETIM
-              </a>
+                    SHKARKO DEKLARATËN NËN BETIM
+                </a>
+                )}
+                {column.aplikimiPDF && (
                 <a className='flex underline text-[14px] text-blue-400 hover:text-white hover:scale-105 hover:duration-500 hover:no-underline' href={column.aplikimiPDF} target="_blank" rel="noopener noreferrer">
-                    SHIKO KONKURSIN<img className="w-5 h-5 object-contain ml-[5px]" src={pdfIcon} alt="" />
-                </a>            
+                    SHIKO MË SHUMË<img className="w-5 h-5 object-contain ml-[5px]" src={pdfIcon} alt="" />
+                </a>
+                )}
+        
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -146,7 +153,7 @@ const AnimatedAd = ({ column, index, isLargeDevice }) => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className='bg-[#6ADB84] text-[22px] text-white justify-centeri items-center grid lg:w-1/2 w-full h-56 lg:h-[466px] text-center font-custom lg:rounded-tr-[6px] rounded-bl-[6px] lg:rounded-bl-none rounded-br-[6px]'
             >
-                <img src={column.adsImage} alt='' className='h-56 lg:h-[466px] w-full object-cover' />
+                <img src={column.adsImage} alt='' className='h-56 lg:h-[466px] 2xl:h-[530px] w-full object-cover' />
             </motion.div>
         </motion.div>
     );
