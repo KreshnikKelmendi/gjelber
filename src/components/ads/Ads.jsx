@@ -121,9 +121,9 @@ const AnimatedAd = ({ column, index, isLargeDevice }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 style={{ backgroundColor: column.background }}
-                className={`lg:w-1/2 lg:h-[466px] 2xl:h-[530px] h-fit py-10 grid rounded-tl-[6px] rounded-tr-[6px] lg:rounded-tr-none lg:rounded-bl-[6px] px-5 lg:py-20 lg:justify-center items-center text-[${column.textColor}]`}
+                className={`lg:w-1/2 lg:h-[466px] 2xl:h-[530px] h-fit py-10 grid rounded-tl-[6px] rounded-tr-[6px] lg:rounded-tr-none lg:rounded-bl-[6px] px-5 lg:py-20  text-[${column.textColor}]`}
             >   
-                 <p className={`text-[12px] border-b border-b-green-600 w-fit leading-[25px] font-custom text-[${column.textColor}]`}>
+                 <p className={`text-[12px] w-fit leading-[25px] font-custom text-[${column.textColor}]`}>
                     {column.konkurs}
                 </p>
                 <p className={`lg:text-[18px] uppercase font-normal text-[${column.textColor}] lg:leading-[32.32px] font-custom`}>{column.title}</p>
