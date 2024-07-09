@@ -41,7 +41,7 @@ const shpalljet = [
   {
     id:32,
     konkurs: "KONKURS",
-    title: "Arkivist/e",
+    title: "Punëtor fizik për kapjen e qenëve endacak",
     description: 'Punëtor fizik për kapjen e qenëve endacak',
     background: '#006646',
     buttonColor: "#6ADB84",
