@@ -27,9 +27,23 @@ const DropdownMenu = ({ closeMenu }) => {
   );
 };
 
+const ContactDropdownMenu = ({ closeMenu }) => {
+  return (
+    <ul className='absolute bg-[#FFF6E7] z-50 top-full left-0 ml-[-10px] py-5 lg:w-[250px] rounded-[6px]'>
+      <li>
+        <NavLink onClick={closeMenu} to="/contact" className='block mx-3 my-2 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Kontakti</NavLink>
+      </li>
+      <li>
+        <NavLink onClick={closeMenu} to="/zyrtare-pergjegjese-per-sinjalizim" className='block mx-3 my-3 text-[10px] text-[#003249] font-custom font-normal hover:bg-gray-100'>Zyrtare Përgjegjëse për Sinjalizim</NavLink>
+      </li>
+    </ul>
+  );
+};
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [contactDropdownOpen, setContactDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -38,10 +52,15 @@ const Header = () => {
   const closeMenu = () => {
     setOpen(false);
     setDropdownOpen(false);
+    setContactDropdownOpen(false);
   };
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const toggleContactDropdown = () => {
+    setContactDropdownOpen(!contactDropdownOpen);
   };
 
   return (
@@ -76,36 +95,35 @@ const Header = () => {
               <NavLink onClick={closeMenu} to="/rrethNesh">Rreth Nesh</NavLink>
               <span className=' ml-8 lg:ml-3'>
                 {dropdownOpen ? (
-                 
                   <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className='w-4 h-4 inline-block'
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 15l7-7 7 7"
-                  />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    className='w-4 h-4 inline-block'
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 15l7-7 7 7"
+                    />
+                  </svg>
                 ) : (
                   <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className='w-4 h-4 inline-block'
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    className='w-4 h-4 inline-block'
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 )}
               </span>
               {dropdownOpen && <DropdownMenu closeMenu={closeMenu} />}
@@ -117,8 +135,48 @@ const Header = () => {
           <li className='lg:ml-8 lg:my-0 my-7 font-custom'>
             <NavLink onClick={closeMenu} to="/veprimtarite" className='text-gray-800 hover:text-gray-400 duration-500 active:text-red-500'>Veprimtaritë</NavLink>
           </li>
-          <li className='lg:ml-8 lg:my-0 my-7 font-custom'>
-            <NavLink onClick={closeMenu} to="/contact" className=' text-gray-800 hover:text-gray-400 duration-500 active:text-red-500'>Kontakti</NavLink>
+          <li className='lg:ml-8 lg:my-0 my-7 font-custom relative'>
+            <div
+              onMouseEnter={toggleContactDropdown}
+              onMouseLeave={toggleContactDropdown}
+              className='text-gray-800 hover:text-gray-400 duration-500 active:text-red-500 cursor-pointer flex items-center'
+            >
+              <NavLink onClick={closeMenu} to="/contact">Kontakti</NavLink>
+              <span className=' ml-8 lg:ml-3'>
+                {contactDropdownOpen ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    className='w-4 h-4 inline-block'
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 15l7-7 7 7"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    className='w-4 h-4 inline-block'
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                )}
+              </span>
+              {contactDropdownOpen && <ContactDropdownMenu closeMenu={closeMenu} />}
+            </div>
           </li>
           <Link onClick={closeMenu} to="/shpalljet" className='z-50'>
             <Button className='text-white hover:text-white duration-500 active:text-red-500'>

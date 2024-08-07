@@ -15,6 +15,7 @@ import Footer from "./components/footer/Footer";
 import HomePage from "./components/pages/HomePage";
 import KornizaLigjore from "./components/pages/KornizaLigjore";
 import StrukturaOrganizativeNdermarrjes from "./components/pages/StrukturaOrganizativeNdermarrjes";
+import Zps from "./components/pages/Zps";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/aktivitetet/:id" element={<SinglePageOfActivity />} />
             <Route path="/veprimtarite" element={<VeprimtaritePage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/zyrtare-pergjegjese-per-sinjalizim" element={<Zps />} />
             <Route path="/shpalljet" element={<AdsPage />} />
             <Route path="/shpalljet/:id" element={<SinglePageOfAds />} /> 
           </Routes>
