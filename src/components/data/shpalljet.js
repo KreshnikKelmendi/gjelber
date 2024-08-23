@@ -39,7 +39,7 @@ import shpallja31 from "../assets/Konkursi punëtor fizik për kapjen e qenë
 import shpallja32 from "../assets/18.07.2024 Konkurs - Punetor fizik ne ngritjen sipërfaqeve gjelbruese.pdf"
 import shpallja33 from "../assets/Kultivuesit e luleve dhe bimëve dekorative në sera dhe ambient të jashtëm.pdf"
 import shpallja34 from "../assets/Depoist Konkursi Depoist 20.08.2024 i perkthyer (3).pdf"
-import shpallja35 from "../assets/22.08. 2024 Konkurs - Punetor fizik ne ngritjen sipërfaqeve gjelbruese 2.pdf"
+import shpallja35 from "../assets/22.08. 2024 Konkurs - Punetor fizik ne ngritjen sipërfaqeve gjelbruese 3.pdf"
 
 const shpalljet = [
   {
