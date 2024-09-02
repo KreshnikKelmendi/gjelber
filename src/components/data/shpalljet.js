@@ -41,7 +41,7 @@ import shpallja33 from "../assets/Kultivuesit e luleve dhe bimëve dekorative n
 import shpallja34 from "../assets/Depoist Konkursi Depoist 20.08.2024 i perkthyer (3).pdf"
 import shpallja35 from "../assets/22.08. 2024 Konkurs - Punetor fizik ne ngritjen sipërfaqeve gjelbruese 3.pdf"
 import shpallja36 from "../assets/29.08.2024 Asistent Administrativ Qendra e Qeve srb.pdf"
-import shpallja37 from "../assets/30.08.2024.Zyrtar Burimeve Njërzore.pdf"
+import shpallja37 from "../assets/30.08.2024.Zyrtar Burimeve Njërzore (2).pdf"
 
 const shpalljet = [
   {
