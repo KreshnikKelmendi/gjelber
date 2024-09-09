@@ -44,8 +44,41 @@ import shpallja36 from "../assets/29.08.2024 Asistent Administrativ Qendra e Qev
 import shpallja37 from "../assets/30.08.2024.Zyrtar Burimeve Njërzore (2).pdf"
 import shpallja38 from "../assets/05.09.2024 Konkurs - Kryepuntor ne Germi.pdf"
 import shpallja39 from "../assets/05.09.2024 Roje Pylli Pylltar.pdf"
+import shpallja40 from "../assets/Perkthim Keshilltar i Ndërmarrjes 09.09.2024 i perkthyer.pdf"
 
 const shpalljet = [
+  {
+    id:41,
+    konkurs: "KONKURS I JASHTËM",
+    title: "Këshilltar i Ndërmarrjes",
+    description: 'Këshilltar i Ndërmarrjes',
+    background: '#006646',
+    buttonColor: "#6ADB84",
+    textColor: "#FFF6E7",
+    adsImage: lawConculent,
+    publicationDate: '09.09.2024',
+    headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë: 16.06.2023 si dhe Rregullores për procedurat e rekrutimit, Vendimit të Komisionit me numër protokolli 896 të datës 27.03.2024 si dhe Kërkesës me nr Arkivi 888 të dt 27.03.2024 NPL”Gjelbër” rishpall këtë:",
+    titulliPozites: "Kryepunëtor në ngritjen dhe mirëmbajtjen e sipërfaqeve gjelbëruese",
+    kontrata: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    orari: "I plotë",
+    paga: "Niveli i pagës: 10",
+    vendi: "Prishtinë",
+    diploma: "Shkolla e Mesme",
+    patentShofer: "Patentë shofer - Kategoria B",
+    pervojaPunes: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    kushtetKualifikimit: "Të plotësojë kushtet e kualifikimit sipas nenit 17.1 si dhe të plotësojë kriteret e pavarësisë sipas nenit 17.2 pikat (d),(f),(j),(k),(l) të Ligjit nr. 03/L-087 të Ndërmarrjeve Publike dhe Plotësim Ndryshimit të LNP nr. 04/L-111 neni 13;",
+    detyra1: "merr direktiva nga Veterinari dhe Drejtori i Operativës",
+    detyra2: "kryen shërbime për kapjen e qenëve endacak dhe i transporton në qendër",
+    detyra3: "sistemon kafshët në kafaze dhe kujdeset për mirëqenien e tyre",
+    detyra4: "kryen dhe punë të tjera duke u bazuar në veprimtarinë e ndërmarrjes dhe urdhëresës së eprorit,",
+    detyra5: "obligohet të lëviz nga njësia në njësi- zona të tjera, në raste të veçanta dhe sipas kërkesës së punës me urdhër të drejtorit të operativës",
+    detyra6: "për punën e tij i përgjigjet Veterinarit dhe Drejtorit të Operativës",
+    aplikacioniPlotesuar:"Aplikacionin e plotësuar",
+    diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
+    aplikacioniNenBetim: aplikacioni,
+    aplikacioniPerPunesim: aplikacioniPunesimit,
+    aplikimiPDF: shpallja40
+  },
   {
     id:40,
     konkurs: "KONKURS I BRENDSHËM",
