@@ -56,7 +56,7 @@ const shpalljet = [
   {
     id:45,
     konkurs: "KONKURS - për Ekspert të Jashtëm",
-    title: "Eksper/e/i e Jashtëm - Fotograf për Qendrën për Trajtimin e Qenëve Endacak (QTQE)",
+    title: "Ekspert/e/i e Jashtëm - Fotograf për Qendrën për Trajtimin e Qenëve Endacak (QTQE)",
     description: 'Mirëmbajtës i Higjienës',
     background: '#006646',
     buttonColor: "#6ADB84",
