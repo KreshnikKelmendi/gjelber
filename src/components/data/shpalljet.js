@@ -52,7 +52,7 @@ import shpallja43 from "../assets/KONSULENT IT.pdf"
 import photograph from "../assets/photograph.jpg"
 import shpallja44 from "../assets/EKSPERT I JASHTEM.pdf"
 import shpallja45 from "../assets/Konkursi Roje germi 30.10.2024 kk.pdf"
-import shpallja46 from "../assets/Shpallje Publike - 2024.pdf"
+import shpallja46 from "../assets/Shpallje për trajnim.pdf"
 
 const shpalljet = [
   {
@@ -60,10 +60,10 @@ const shpalljet = [
     konkurs: "Shpallje Publike",
     title: "Thirrje për kompanitë e interesuara për ofrimin e trajnimeve në krasitje dhe hortikulturë",
     description: 'Thirrje për kompanitë e interesuara për ofrimin e trajnimeve në krasitje dhe hortikulturë',
-    background: '#006646',
+    background: '#003249',
     buttonColor: "#6ADB84",
     textColor: "#FFF6E7",
-    adsImage: germiaPark,
+    adsImage: greenAttacks,
     publicationDate: '18.11.2024',
     headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë: 16.06.2023 si dhe Rregullores për procedurat e rekrutimit, Vendimit të Komisionit me numër protokolli 896 të datës 27.03.2024 si dhe Kërkesës me nr Arkivi 888 të dt 27.03.2024 NPL”Gjelbër” rishpall këtë:",
     titulliPozites: "Kryepunëtor në ngritjen dhe mirëmbajtjen e sipërfaqeve gjelbëruese",
@@ -83,8 +83,8 @@ const shpalljet = [
     detyra6: "për punën e tij i përgjigjet Veterinarit dhe Drejtorit të Operativës",
     aplikacioniPlotesuar:"Aplikacionin e plotësuar",
     diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
-    aplikacioniNenBetim: aplikacioni,
-    aplikacioniPerPunesim: aplikacioniPunesimit,
+    // aplikacioniNenBetim: aplikacioni,
+    // aplikacioniPerPunesim: aplikacioniPunesimit,
     aplikimiPDF: shpallja46
   },
   {
