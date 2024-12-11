@@ -57,7 +57,7 @@ import shpallja47 from "../assets/Praktikant  Automekanik 21.11.2024.pdf";
 import mechanic from "../assets/mechanic.jpg"
 import shpallja48 from "../assets/20241203142943016.pdf"
 import operations from "../assets/operations-manager.jpg"
-import shpallja49 from "../assets/20241210150258876.pdf"
+import shpallja49 from "../assets/20241211111630312.pdf"
 import cosulent from "../assets/assistant-vs-secretary-1024x683.jpg"
 
 const shpalljet = [
