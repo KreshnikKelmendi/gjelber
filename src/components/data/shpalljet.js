@@ -61,17 +61,17 @@ import shpallja49 from "../assets/20241211111630312.pdf"
 import cosulent from "../assets/assistant-vs-secretary-1024x683.jpg"
 import shpallja50 from "../assets/20241212142711843.pdf"
 import shpallja51 from "../assets/20241213151202043.pdf"
-
+import sera from "../assets/sera.jpg"
 const shpalljet = [
   {
     id:455,
     konkurs: "KONKURS",
     title: "Kultivuesit e luleve dhe bimëve dekorative në sera dhe ambient të jashtëm",
     description: 'Drejtor i Operativës',
-    background: '#003249',
+    background: '#FFF6E7',
     buttonColor: "#6ADB84",
-    textColor: "#FFF6E7",
-    adsImage: peisazhiGermise,
+    textColor: "#003249",
+    adsImage: sera,
     publicationDate: '13.12.2024',
     headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë: 16.06.2023 si dhe Rregullores për procedurat e rekrutimit, Vendimit të Komisionit me numër protokolli 896 të datës 27.03.2024 si dhe Kërkesës me nr Arkivi 888 të dt 27.03.2024 NPL”Gjelbër” rishpall këtë:",
     titulliPozites: "Kryepunëtor në ngritjen dhe mirëmbajtjen e sipërfaqeve gjelbëruese",
