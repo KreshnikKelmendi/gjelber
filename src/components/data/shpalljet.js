@@ -62,7 +62,7 @@ import cosulent from "../assets/assistant-vs-secretary-1024x683.jpg"
 import shpallja50 from "../assets/20241212142711843.pdf"
 import shpallja51 from "../assets/20241213151202043.pdf"
 import sera from "../assets/sera.jpg"
-import shpallja52 from "../assets/20241216161339466.pdf"
+import shpallja52 from "../assets/Konkursi Pf.pdf"
 
 const shpalljet = [
   {
