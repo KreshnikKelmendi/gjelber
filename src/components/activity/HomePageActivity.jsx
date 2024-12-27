@@ -79,7 +79,7 @@ const HomePageActivity = () => {
       >
         {items?.map((item, index) => (
           <div key={index} className='carousel-item mt-5 lg:mt-16'>
-            <img src={item.image} alt={item.title} className='lg:w-[336px] lg:h-[334px] object-cover rounded-[6px]' />
+            <img src={item.image} alt={item.title} className='lg:w-[336px] 2xl:w-full 2xl:h-[55vh] lg:h-[334px] object-cover rounded-[6px]' />
             <h3 className='text-[#6ADB84] text-[22px] font-custom font-normal leading-[22.22px] mt-5'>{item.title}</h3>
             <p className='lg:w-[256px] text-[14px] mt-5 text-[#FFF6E7] font-custom font-normal leading-[25px]'>{item.description}</p>
             {/* <button className='mt-5 text-[#F18934] text-[16px] font-medium font-custom border-b border-[#F18934] hover:scale-125'>Më shumë</button> */}
