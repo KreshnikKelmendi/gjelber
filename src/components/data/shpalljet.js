@@ -63,7 +63,7 @@ import shpallja50 from "../assets/20241212142711843.pdf"
 import shpallja51 from "../assets/20241213151202043.pdf"
 import sera from "../assets/sera.jpg"
 import shpallja52 from "../assets/Konkursi Pf.pdf"
-import shpallja53 from "../assets/20250121160427093.pdf"
+import shpallja53 from "../assets/Kontabilist.pdf"
 
 
 const shpalljet = [
