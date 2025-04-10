@@ -52,7 +52,7 @@ import shpallja43 from "../assets/KONSULENT IT.pdf"
 import photograph from "../assets/photograph.jpg"
 import shpallja44 from "../assets/EKSPERT I JASHTEM.pdf"
 import shpallja45 from "../assets/Konkursi Roje germi 30.10.2024 kk.pdf"
-import shpallja46 from "../assets/Shpallje për trajnim.pdf";
+import shpallja46 from "../assets/Shpallje për trajnim-2025.pdf";
 import shpallja47 from "../assets/Praktikant  Automekanik 21.11.2024.pdf";
 import mechanic from "../assets/mechanic.jpg"
 import shpallja48 from "../assets/20241203142943016.pdf"
@@ -70,6 +70,38 @@ import shpallja56 from "../assets/Konkurs - Kryepunëtor i inkasntëve.pdf"
 import inchasant from "../assets/inchasant.JPG"
 
 const shpalljet = [
+  {
+    id:451,
+    konkurs: "Shpallje Publike",
+    title: "Thirrje për kompanitë e interesuara për ofrimin e trajnimeve në krasitje dhe hortikulturë",
+    description: 'Thirrje për kompanitë e interesuara për ofrimin e trajnimeve në krasitje dhe hortikulturë',
+    background: '#003249',
+    buttonColor: "#6ADB84",
+    textColor: "#FFF6E7",
+    adsImage: greenAttacks,
+    publicationDate: '10.04.2025',
+    headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë: 16.06.2023 si dhe Rregullores për procedurat e rekrutimit, Vendimit të Komisionit me numër protokolli 896 të datës 27.03.2024 si dhe Kërkesës me nr Arkivi 888 të dt 27.03.2024 NPL”Gjelbër” rishpall këtë:",
+    titulliPozites: "Kryepunëtor në ngritjen dhe mirëmbajtjen e sipërfaqeve gjelbëruese",
+    kontrata: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    orari: "I plotë",
+    paga: "Niveli i pagës: 10",
+    vendi: "Prishtinë",
+    diploma: "Shkolla e Mesme",
+    patentShofer: "Patentë shofer - Kategoria B",
+    pervojaPunes: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    kushtetKualifikimit: "Të plotësojë kushtet e kualifikimit sipas nenit 17.1 si dhe të plotësojë kriteret e pavarësisë sipas nenit 17.2 pikat (d),(f),(j),(k),(l) të Ligjit nr. 03/L-087 të Ndërmarrjeve Publike dhe Plotësim Ndryshimit të LNP nr. 04/L-111 neni 13;",
+    detyra1: "merr direktiva nga Veterinari dhe Drejtori i Operativës",
+    detyra2: "kryen shërbime për kapjen e qenëve endacak dhe i transporton në qendër",
+    detyra3: "sistemon kafshët në kafaze dhe kujdeset për mirëqenien e tyre",
+    detyra4: "kryen dhe punë të tjera duke u bazuar në veprimtarinë e ndërmarrjes dhe urdhëresës së eprorit,",
+    detyra5: "obligohet të lëviz nga njësia në njësi- zona të tjera, në raste të veçanta dhe sipas kërkesës së punës me urdhër të drejtorit të operativës",
+    detyra6: "për punën e tij i përgjigjet Veterinarit dhe Drejtorit të Operativës",
+    aplikacioniPlotesuar:"Aplikacionin e plotësuar",
+    diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
+    // aplikacioniNenBetim: aplikacioni,
+    // aplikacioniPerPunesim: aplikacioniPunesimit,
+    aplikimiPDF: shpallja46
+  },
   {
     id:456-4,
     konkurs: "KONKURS",
@@ -390,38 +422,7 @@ const shpalljet = [
     aplikacioniPerPunesim: aplikacioniPunesimit,
     aplikimiPDF: shpallja47
   },
-  {
-    id:451,
-    konkurs: "Shpallje Publike",
-    title: "Thirrje për kompanitë e interesuara për ofrimin e trajnimeve në krasitje dhe hortikulturë",
-    description: 'Thirrje për kompanitë e interesuara për ofrimin e trajnimeve në krasitje dhe hortikulturë',
-    background: '#003249',
-    buttonColor: "#6ADB84",
-    textColor: "#FFF6E7",
-    adsImage: greenAttacks,
-    publicationDate: '18.11.2024',
-    headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë: 16.06.2023 si dhe Rregullores për procedurat e rekrutimit, Vendimit të Komisionit me numër protokolli 896 të datës 27.03.2024 si dhe Kërkesës me nr Arkivi 888 të dt 27.03.2024 NPL”Gjelbër” rishpall këtë:",
-    titulliPozites: "Kryepunëtor në ngritjen dhe mirëmbajtjen e sipërfaqeve gjelbëruese",
-    kontrata: "puna provuese 6 muaj (me mundësi vazhdimi)",
-    orari: "I plotë",
-    paga: "Niveli i pagës: 10",
-    vendi: "Prishtinë",
-    diploma: "Shkolla e Mesme",
-    patentShofer: "Patentë shofer - Kategoria B",
-    pervojaPunes: "puna provuese 6 muaj (me mundësi vazhdimi)",
-    kushtetKualifikimit: "Të plotësojë kushtet e kualifikimit sipas nenit 17.1 si dhe të plotësojë kriteret e pavarësisë sipas nenit 17.2 pikat (d),(f),(j),(k),(l) të Ligjit nr. 03/L-087 të Ndërmarrjeve Publike dhe Plotësim Ndryshimit të LNP nr. 04/L-111 neni 13;",
-    detyra1: "merr direktiva nga Veterinari dhe Drejtori i Operativës",
-    detyra2: "kryen shërbime për kapjen e qenëve endacak dhe i transporton në qendër",
-    detyra3: "sistemon kafshët në kafaze dhe kujdeset për mirëqenien e tyre",
-    detyra4: "kryen dhe punë të tjera duke u bazuar në veprimtarinë e ndërmarrjes dhe urdhëresës së eprorit,",
-    detyra5: "obligohet të lëviz nga njësia në njësi- zona të tjera, në raste të veçanta dhe sipas kërkesës së punës me urdhër të drejtorit të operativës",
-    detyra6: "për punën e tij i përgjigjet Veterinarit dhe Drejtorit të Operativës",
-    aplikacioniPlotesuar:"Aplikacionin e plotësuar",
-    diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
-    // aplikacioniNenBetim: aplikacioni,
-    // aplikacioniPerPunesim: aplikacioniPunesimit,
-    aplikimiPDF: shpallja46
-  },
+ 
   {
     id:450,
     konkurs: "KONKURS I JASHTËM",
