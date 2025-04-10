@@ -161,6 +161,8 @@ const AnimatedAd = ({ column, index, isLargeDevice }) => {
 
 const Ads = () => {
     const [isLargeDevice, setIsLargeDevice] = useState(window.innerWidth >= 1024);
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 12;
 
     useEffect(() => {
         const handleResize = () => {
@@ -172,6 +174,21 @@ const Ads = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    // Calculate total pages
+    const totalPages = Math.ceil(shpalljet.length / itemsPerPage);
+    
+    // Get current items
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = shpalljet.slice(indexOfFirstItem, indexOfLastItem);
+
+    // Change page
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber);
+        // Scroll to top when page changes
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
         <>
@@ -188,13 +205,47 @@ const Ads = () => {
             </div>
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-2 mt-2 px-5 lg:px-10'>
-                {shpalljet?.map((column, index) => (
+                {currentItems?.map((column, index) => (
                     <AnimatedAd key={index} column={column} index={index} isLargeDevice={isLargeDevice} />
                 ))}
+            </div>
+
+            {/* Pagination */}
+            <div className="flex justify-center mt-8 mb-12">
+                <nav className="inline-flex rounded-md shadow">
+                    <button
+                        onClick={() => {
+                            if (currentPage > 1) paginate(currentPage - 1);
+                        }}
+                        disabled={currentPage === 1}
+                        className="px-3 py-1 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        &laquo; 
+                    </button>
+                    
+                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((number) => (
+                        <button
+                            key={number}
+                            onClick={() => paginate(number)}
+                            className={`px-3 py-1 border-t border-b border-gray-300 bg-white text-sm font-medium ${currentPage === number ? 'bg-green-400 text-white' : 'text-gray-700 hover:bg-gray-50'}`}
+                        >
+                            {number}
+                        </button>
+                    ))}
+                    
+                    <button
+                        onClick={() => {
+                            if (currentPage < totalPages) paginate(currentPage + 1);
+                        }}
+                        disabled={currentPage === totalPages}
+                        className="px-3 py-1 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                         &raquo;
+                    </button>
+                </nav>
             </div>
         </>
     );
 };
 
 export default Ads;
-
