@@ -1,114 +1,130 @@
 import React from 'react';
 import logoFooter from '../assets/logofooter.png';
 import { Link } from 'react-router-dom';
-import instagramIcon from "../assets/instagramLogs.png"
-import facebookIcon from "../assets/fb-logo.png"
+import instagramIcon from "../assets/instagramLogs.png";
+import facebookIcon from "../assets/fb-logo.png";
 
 const Footer = () => {
   return (
-    <div className='mt-[-104.5px] bg-[#6ADB84] h-[100%] lg:h-[676px] py-40 flex justify-center items-center'>
-      <div className='flex flex-col lg:flex-row lg:space-x-28'>
+    <div className='bg-[#6ADB84] py-16 lg:py-24 px-4 lg:px-8 w-full mt-[-45px] relative'>
       <div className='mx-auto'>
-        <img src={logoFooter} alt='' className='object-contain w-[214px] h-[47px]' />
-        <p className='text-[15px] w-[178px] leading-[17.8px] mt-3 text-[#FFF6E7] font-normal font-custom'>Bashkohu në Mbrojtjen e Mjedisit!
+        {/* Main Footer Content */}
+        <div className='flex flex-col lg:flex-row justify-between gap-12 lg:gap-8'>
+          
+          {/* Logo and Tagline */}
+          <div className='flex flex-col items-center lg:items-start'>
+            <img 
+              src={logoFooter} 
+              alt='Gjelbër Logo' 
+              className='w-[214px] h-[47px] object-contain'
+            />
+            <p className='text-[15px] text-center lg:text-left text-[#FFF6E7] font-normal font-custom mt-4 max-w-[250px]'>
+              Bashkohu në Mbrojtjen e Mjedisit!
+            </p>
+          </div>
 
-</p>
-        </div>
-        <nav className='lg:ml-4 mt-6'>
-          <ul className='flex flex-col lg:flex-row lg:space-x-28 space-y-12 lg:space-y-0'>
-            <li>
-              <a href='/about-gjelber' className='font-custom uppercase hover:text-gray-300 text-[15px] text-[#006646]'>
+          {/* Navigation Sections */}
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8'>
+            
+            {/* Gjelbër Links */}
+            <div className='space-y-4'>
+              <h3 className='font-custom uppercase text-[15px] text-[#006646] font-semibold'>
                 Gjelbër
-              </a>
-              <ul className=''>
-                <li className='mt-4'>
-                  <Link to="/"onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
-                    Ballina
-                  </Link>
-                </li>
-                <li className='mt-4'>
-                <Link to="/rrethNesh" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
-                    Rreth Nesh
-                  </Link>
-                </li>
-                <li className='mt-4'>
-                <Link to="/aktivitetet" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
-                    Aktivitetet
-                  </Link>
-                </li>
-                <li className='mt-4'>
-                <Link to="/veprimtarite" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
-                    Veprimtaritë
-                  </Link>
-                </li>
-                <li className='mt-4'>
-                <Link to="/contact" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
-                    Kontakti
-                  </Link>
-                </li>
-                <li className='mt-4'>
-                <Link to="/shpalljet" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='text-white hover:text-gray-300'>
-                    Shpalljet
-                  </Link>
-                </li>
+              </h3>
+              <ul className='space-y-3'>
+                {[
+                  { path: "/", text: "Ballina" },
+                  { path: "/rrethNesh", text: "Rreth Nesh" },
+                  { path: "/aktivitetet", text: "Aktivitetet" },
+                  { path: "/veprimtarite", text: "Veprimtaritë" },
+                  { path: "/contact", text: "Kontakti" },
+                  { path: "/shpalljet", text: "Shpalljet" }
+                ].map((item, index) => (
+                  <li key={index}>
+                    <Link 
+                      to={item.path} 
+                      onClick={() => window.scrollTo({ top: 0, left: 0 })} 
+                      className='text-white hover:text-gray-300 transition-colors duration-200'
+                    >
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
               </ul>
-            </li>
-            <li>
-              <Link to="/rrethNesh" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='font-custom uppercase hover:text-gray-300 text-[15px] text-[#006646]'>
+            </div>
+
+            {/* Rreth Nesh Links */}
+            <div className='space-y-4'>
+              <h3 className='font-custom uppercase text-[15px] text-[#006646] font-semibold'>
                 Rreth Nesh
-              </Link>
-              <ul className=''>
-                <li className='mt-4'>
-                  <Link to="/komisioniKomunal" onClick={() => window.scrollTo({ top: 0, left: 0 })} href='/category-1' className='text-white hover:text-gray-300'>
-                    Komisioni Komunal i Aksionarëve
-                  </Link>
-                </li>
-                <li className='mt-4'>
-                <Link to="/bordi" onClick={() => window.scrollTo({ top: 0, left: 0 })} href='/category-1' className='text-white hover:text-gray-300'>
-                    Bordi i Drejtorëve
-                  </Link>
-                </li>
-                <li className='mt-4'>
-                <Link to="/menaxhmenti-i-ndermarrjes" onClick={() => window.scrollTo({ top: 0, left: 0 })} href='/category-1' className='text-white hover:text-gray-300'>
-                    Menaxhmenti i Ndërmarrjes
-                  </Link>
-                </li>
-                <li className='mt-4'>
-                <Link to="/korniza-ligjore" onClick={() => window.scrollTo({ top: 0, left: 0 })} href='/category-1' className='text-white hover:text-gray-300'>
-                    Korniza Ligjore
-                  </Link>
-                </li>
-                <li className='mt-4'>
-                <Link to="/struktura-organizative-e-ndermarrjes" onClick={() => window.scrollTo({ top: 0, left: 0 })} href='/category-1' className='text-white hover:text-gray-300'>
-                    Struktura Organizative e Ndërmarrjes
-                  </Link>
-                </li>
+              </h3>
+              <ul className='space-y-3'>
+                {[
+                  { path: "/komisioniKomunal", text: "Komisioni Komunal i Aksionarëve" },
+                  { path: "/bordi", text: "Bordi i Drejtorëve" },
+                  { path: "/menaxhmenti-i-ndermarrjes", text: "Menaxhmenti i Ndërmarrjes" },
+                  { path: "/korniza-ligjore", text: "Korniza Ligjore" },
+                  { path: "/struktura-organizative-e-ndermarrjes", text: "Struktura Organizative" }
+                ].map((item, index) => (
+                  <li key={index}>
+                    <Link 
+                      to={item.path} 
+                      onClick={() => window.scrollTo({ top: 0, left: 0 })} 
+                      className='text-white hover:text-gray-300 transition-colors duration-200'
+                    >
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
               </ul>
-            </li>
+            </div>
 
-<li className=''>
-  <a href='/products' className='font-custom uppercase hover:text-gray-300 text-[15px] text-[#006646]'>
-    Na ndiqni në rrjetet tona sociale.
-  </a>
-  <ul className='flex flex-col space-y-2'>
-    {/* <li className='mt-4'>
-      <a href='/category-1' className='text-white hover:text-gray-300'>
-        Join our online no-community for free. No spam, ever.
-      </a>
-    </li> */}
-    <li className='flex flex-row justify-center items-center lg:space-x-2 mt-4'>
-      <a href='https://www.instagram.com/gjelber.sha/' target='_blank' rel="noreferrer" className='block'>
-        <img src={instagramIcon} alt='Instagram' className='h-10 w-10 object-cover hover:text-gray-300' />
-      </a>
-      <a href='https://www.facebook.com/profile.php?id=100065067662030' target='_blank' rel="noreferrer" className='block'>
-        <img src={facebookIcon} alt='Facebook' className='h-10 w-10 object-cover hover:text-gray-300' />
-      </a>
-    </li>
-  </ul>
-</li>
+            {/* Social Media Section */}
+            <div className='space-y-4'>
+              <h3 className='font-custom uppercase text-[15px] text-[#006646] font-semibold'>
+                Na ndiqni në rrjetet tona sociale
+              </h3>
+              <div className='flex flex-col space-y-4'>
+                <div className='flex justify-center lg:justify-start space-x-6'>
+                  <a 
+                    href='https://www.instagram.com/gjelber.sha/' 
+                    target='_blank' 
+                    rel="noreferrer"
+                    className='transition-transform duration-200 hover:scale-110'
+                  >
+                    <img 
+                      src={instagramIcon} 
+                      alt='Instagram' 
+                      className='h-10 w-10 object-contain'
+                    />
+                  </a>
+                  <a 
+                    href='https://www.facebook.com/profile.php?id=100065067662030' 
+                    target='_blank' 
+                    rel="noreferrer"
+                    className='transition-transform duration-200 hover:scale-110'
+                  >
+                    <img 
+                      src={facebookIcon} 
+                      alt='Facebook' 
+                      className='h-10 w-10 object-contain'
+                    />
+                  </a>
+                </div>
+                <p className='text-white text-sm text-center lg:text-left'>
+                  Bëhu pjesë e komunitetit tonë!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          </ul>
-        </nav>
+        {/* Copyright/Bottom Section */}
+        <div className='border-t border-[#006646] border-opacity-30 mt-12 pt-8'>
+          <p className='text-white text-sm text-center'>
+            © {new Date().getFullYear()} Gjelbër. Të gjitha të drejtat e rezervuara.
+          </p>
+        </div>
       </div>
     </div>
   );

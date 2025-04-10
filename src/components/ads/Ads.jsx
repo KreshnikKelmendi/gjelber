@@ -227,7 +227,7 @@ const Ads = () => {
                         <button
                             key={number}
                             onClick={() => paginate(number)}
-                            className={`px-3 py-1 border-t border-b border-gray-300 bg-white text-sm font-medium ${currentPage === number ? 'bg-blue-500 text-white' : 'text-gray-700 hover:bg-gray-50'}`}
+                            className={`px-3 py-1 border-t border-b border-gray-300 bg-white text-sm font-medium ${currentPage === number ? 'bg-blue-500 text-black' : 'text-gray-500 hover:bg-gray-50'}`}
                         >
                             {number}
                         </button>
