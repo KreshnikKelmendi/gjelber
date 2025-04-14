@@ -131,8 +131,8 @@ const shpalljet = [
     detyra6: "për punën e tij i përgjigjet Veterinarit dhe Drejtorit të Operativës",
     aplikacioniPlotesuar:"Aplikacionin e plotësuar",
     diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
-    // aplikacioniNenBetim: aplikacioni,
-    // aplikacioniPerPunesim: aplikacioniPunesimit,
+    aplikacioniNenBetim: aplikacioni,
+    aplikacioniPerPunesim: aplikacioniPunesimit,
     aplikimiPDF: shpallja57
   },
   {
