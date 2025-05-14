@@ -84,7 +84,7 @@ const shpalljet = [
     buttonColor: "#6ADB84",
     textColor: "#FFF6E7",
     adsImage: cosulent,
-    publicationDate: '02.06.2025',
+    publicationDate: '02.05.2025',
     headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë: 16.06.2023 si dhe Rregullores për procedurat e rekrutimit, Vendimit të Komisionit me numër protokolli 896 të datës 27.03.2024 si dhe Kërkesës me nr Arkivi 888 të dt 27.03.2024 NPL”Gjelbër” rishpall këtë:",
     titulliPozites: "Kryepunëtor në ngritjen dhe mirëmbajtjen e sipërfaqeve gjelbëruese",
     kontrata: "puna provuese 6 muaj (me mundësi vazhdimi)",
