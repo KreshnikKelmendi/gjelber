@@ -72,9 +72,42 @@ import shpallja57 from "../assets/konkursi pf per kapjen e qeneve.pdf"
 import shpallja58 from "../assets/Konkurssi Zyrtar Çertifikues (1).pdf"
 import shpallja59 from "../assets/Konkursi-punetor-fizik.pdf"
 import shpallja60 from "../assets/1028- 29.04.2025 KONKURSI MENAGJERI I TREGUT MOBIL DHE TE AUTOMJETEVE.pdf"
-import shpallja61 from "../assets/1081- 02.05.2025 Konkurs per ekspert te jashtem.pdf"
+import shpallja61 from "../assets/1081- 02.05.2025 Konkurs per ekspert te jashtem.pdf" 
+import shpallja62 from "../assets/thirrje-per-aplikime-2025.pdf"
 
 const shpalljet = [
+  {
+    id:457,
+    konkurs: "Thirrje për aplikim",
+    title: "THIRRJE PËR APLIKIME PËR SPONZORIZIM PËR PROJEKTE NË FUSHËN E SPORTIT, KULTURËS, MJEDISIT DHE ARSIMIT.",
+    description: '',
+    background: '#006646',
+    buttonColor: "#6ADB84",
+    textColor: "#FFF6E7",
+    adsImage: sport,
+    publicationDate: '14.05.2025',
+    headingTop: "Në bazë të nenit 8 të Ligjit të Punës nr.03/L-212, Rregullores mbi organizimin dhe sistematizimin e vendeve dhe detyrave të punës nr.1292 të datë: 16.06.2023 si dhe Rregullores për procedurat e rekrutimit, Vendimit të Komisionit me numër protokolli 896 të datës 27.03.2024 si dhe Kërkesës me nr Arkivi 888 të dt 27.03.2024 NPL”Gjelbër” rishpall këtë:",
+    titulliPozites: "Punëtor fizik për kapjen e qenëve (2 Pozita)",
+    kontrata: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    orari: "I plotë",
+    paga: "Niveli i pagës: 10",
+    vendi: "Prishtinë",
+    diploma: "Shkolla e Mesme",
+    patentShofer: "Patentë shofer - Kategoria B",
+    pervojaPunes: "puna provuese 6 muaj (me mundësi vazhdimi)",
+    kushtetKualifikimit: "Të plotësojë kushtet e kualifikimit sipas nenit 17.1 si dhe të plotësojë kriteret e pavarësisë sipas nenit 17.2 pikat (d),(f),(j),(k),(l) të Ligjit nr. 03/L-087 të Ndërmarrjeve Publike dhe Plotësim Ndryshimit të LNP nr. 04/L-111 neni 13;",
+    detyra1: "merr direktiva nga Veterinari dhe Drejtori i Operativës",
+    detyra2: "kryen shërbime për kapjen e qenëve endacak dhe i transporton në qendër",
+    detyra3: "sistemon kafshët në kafaze dhe kujdeset për mirëqenien e tyre",
+    detyra4: "kryen dhe punë të tjera duke u bazuar në veprimtarinë e ndërmarrjes dhe urdhëresës së eprorit,",
+    detyra5: "obligohet të lëviz nga njësia në njësi- zona të tjera, në raste të veçanta dhe sipas kërkesës së punës me urdhër të drejtorit të operativës",
+    detyra6: "për punën e tij i përgjigjet Veterinarit dhe Drejtorit të Operativës",
+    aplikacioniPlotesuar:"Aplikacionin e plotësuar",
+    diplomaNevojshme: "Dëshmitë për kualifikim shkollor",
+    aplikoni: "Kandidatët e interesuar, aplikimin mund ta bëjnë në mënyrë Elektronike (online) përmes emailit  zyrtar : aplikimet@gjelber.com. Kandidatët duhet të dërgojnë te gjithë dokumentacionin e skenuar nëpërmjet emailit. Të gjithë kandidatët që i plotësojnë kriteret e verifikimit paraprak do t’i nënshtrohen testimit me shkrim dhe intervistimit. Poentimi nga Komisioni për Rekrutim do të bëhet si në vijim:- Jetë përshkrimi (CV) i kandidatit vlerësohet deri në dhjetë (10) pikë- Testimi me shkrim deri në shtatëdhjetë (70) pikë dhe - Intervistimi deri në njëzetë (20) pikë.",
+    rekrutimi: "Procedura e rekrutimit pritet të zgjasë nga data 14.05.2024 deri më 14.06.2024 (ky afat është i përafërt dhe mund të jetë subjekt i ndryshimeve siç specifikon legjislacioni në fuqi.). Shpallja është e hapur që nga data 14.05.2024 deri më 29.05.2024 në orën 15:00. Për informata më të hollësishme mund të kontaktoni Divizionin e Burimeve Njerëzore të NPL”Gjelbër” SH.A.",
+    aplikimiPDF: shpallja62
+  },
   {
     id:456,
     konkurs: "Konkurs për ekspert të jashtëm",
