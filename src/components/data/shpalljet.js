@@ -116,7 +116,7 @@ const shpalljet = [
   {
     id:456,
     konkurs: "Konkurs i Brendshëm",
-    title: "SHËPIAK",
+    title: "SHTËPIAK",
     description: 'Thirrje për kompanitë e interesuara për ofrimin e trajnimeve në krasitje dhe hortikulturë',
     background: '#003249',
     buttonColor: "#6ADB84",
