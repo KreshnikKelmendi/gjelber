@@ -83,7 +83,7 @@ import shpallja67 from "../assets/20250717134750328.pdf"
 import shpallja68 from "../assets/20250813150132655.pdf"
 import shpallja69 from "../assets/Konkurs i Brendshem Vozitës.pdf"
 import shpallja70 from "../assets/Sponzorizim 2025.pdf"
-import shpallja71 from "../assets/20251118122508441.pdf"
+import shpallja71 from "../assets/Konkurs i jashtëm -Kryeshef Ekzekutiv.pdf"
 
 const shpalljet = [
   {
