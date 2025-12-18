@@ -16,7 +16,7 @@ const getNextJsUrl = () => {
   }
   
   // In production, use Vercel URL
-  return "https://shpalljet-gjelber.vercel.app";
+  return "https://gjelber-shpalljet.vercel.app";
 };
 
 const nextjsUrl = getNextJsUrl();
