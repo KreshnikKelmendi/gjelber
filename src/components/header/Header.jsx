@@ -4,6 +4,7 @@ import Button from './Button';
 import menu from "../assets/menu.png";
 import closeIcon from "../assets/remove.png";
 import logo from "../assets/Layer_1.png";
+import { nextjsUrl } from "../assets/api/nextjsUrl";
 
 const DropdownMenu = ({ closeMenu }) => {
   return (
@@ -178,11 +179,11 @@ const Header = () => {
               {contactDropdownOpen && <ContactDropdownMenu closeMenu={closeMenu} />}
             </div>
           </li>
-          <Link onClick={closeMenu} to="/shpalljet" className='z-50'>
+          <a onClick={closeMenu} href={`${nextjsUrl}/shpalljet`} className='z-50'>
             <Button className='text-white hover:text-white duration-500 active:text-red-500'>
               Shpalljet
             </Button>
-          </Link>
+          </a>
         </ul>
       </div>
     </div>

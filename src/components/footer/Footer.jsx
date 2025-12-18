@@ -3,6 +3,7 @@ import logoFooter from '../assets/logofooter.png';
 import { Link } from 'react-router-dom';
 import instagramIcon from "../assets/instagramLogs.png";
 import facebookIcon from "../assets/fb-logo.png";
+import { nextjsUrl } from "../assets/api/nextjsUrl";
 
 const Footer = () => {
   return (
@@ -33,21 +34,31 @@ const Footer = () => {
               </h3>
               <ul className='space-y-3'>
                 {[
-                  { path: "/", text: "Ballina" },
-                  { path: "/rrethNesh", text: "Rreth Nesh" },
-                  { path: "/aktivitetet", text: "Aktivitetet" },
-                  { path: "/veprimtarite", text: "Veprimtaritë" },
-                  { path: "/contact", text: "Kontakti" },
-                  { path: "/shpalljet", text: "Shpalljet" }
+                  { path: "/", text: "Ballina", isExternal: false },
+                  { path: "/rrethNesh", text: "Rreth Nesh", isExternal: false },
+                  { path: "/aktivitetet", text: "Aktivitetet", isExternal: false },
+                  { path: "/veprimtarite", text: "Veprimtaritë", isExternal: false },
+                  { path: "/contact", text: "Kontakti", isExternal: false },
+                  { path: "/shpalljet", text: "Shpalljet", isExternal: true }
                 ].map((item, index) => (
                   <li key={index}>
-                    <Link 
-                      to={item.path} 
-                      onClick={() => window.scrollTo({ top: 0, left: 0 })} 
-                      className='text-white hover:text-gray-300 transition-colors duration-200'
-                    >
-                      {item.text}
-                    </Link>
+                    {item.isExternal ? (
+                      <a 
+                        href={`${nextjsUrl}${item.path}`} 
+                        onClick={() => window.scrollTo({ top: 0, left: 0 })} 
+                        className='text-white hover:text-gray-300 transition-colors duration-200'
+                      >
+                        {item.text}
+                      </a>
+                    ) : (
+                      <Link 
+                        to={item.path} 
+                        onClick={() => window.scrollTo({ top: 0, left: 0 })} 
+                        className='text-white hover:text-gray-300 transition-colors duration-200'
+                      >
+                        {item.text}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

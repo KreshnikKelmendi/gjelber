@@ -1,11 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContactPage from "./components/pages/ContactPage";
 import Header from "./components/header/Header";
-import AdsPage from "./components/pages/AdsPage";
 import ActivityPage from "./components/pages/ActivityPage";
 import SinglePageOfActivity from "./components/pages/SinglePageOfActivity";
 import VeprimtaritePage from "./components/pages/VeprimtaritePage";
-import SinglePageOfAds from "./components/pages/SinglePageOfAds";
 import KomisioniKomunal from "./components/pages/KomisioniKomunal";
 import Bordi from "./components/pages/Bordi";
 import Kryeshefi from "./components/pages/Kryeshefi";
@@ -36,8 +34,7 @@ function App() {
             <Route path="/veprimtarite" element={<VeprimtaritePage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/zyrtare-pergjegjese-per-sinjalizim" element={<Zps />} />
-            <Route path="/shpalljet" element={<AdsPage />} />
-            <Route path="/shpalljet/:id" element={<SinglePageOfAds />} /> 
+            {/* Shpalljet routes moved to Next.js app */} 
           </Routes>
           <AdsBanner />
           <Footer />

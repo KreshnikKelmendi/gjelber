@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { nextjsUrl } from "../assets/api/nextjsUrl";
 
 const AdsBanner = () => {
   const [ref, inView] = useInView({
@@ -26,7 +27,7 @@ const AdsBanner = () => {
       <p className='text-3xl text-center lg:text-left lg:text-[48px] text-[#FFF6E7] lg:w-[410px] font-custom font-bold lg:leading-[48.48px]'>
         Prishtina e freskët frymon gjelbër!{' '}
       </p>
-      <Link to="/shpalljet" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
+      <a href={`${nextjsUrl}/shpalljet`} onClick={() => window.scrollTo({ top: 0, left: 0 })}>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -34,7 +35,7 @@ const AdsBanner = () => {
         >
           Shpalljet
         </motion.button>
-      </Link>
+      </a>
     </motion.div>
   );
 };
