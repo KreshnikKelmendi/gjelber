@@ -179,7 +179,7 @@ const Header = () => {
               {contactDropdownOpen && <ContactDropdownMenu closeMenu={closeMenu} />}
             </div>
           </li>
-          <a onClick={closeMenu} href={`${nextjsUrl}/shpalljet`} className='z-50'>
+          <a onClick={closeMenu} href={nextjsUrl ? `${nextjsUrl}/shpalljet` : '/shpalljet'} className='z-50'>
             <Button className='text-white hover:text-white duration-500 active:text-red-500'>
               Shpalljet
             </Button>

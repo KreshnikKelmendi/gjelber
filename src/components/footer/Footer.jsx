@@ -44,7 +44,7 @@ const Footer = () => {
                   <li key={index}>
                     {item.isExternal ? (
                       <a 
-                        href={`${nextjsUrl}${item.path}`} 
+                        href={nextjsUrl ? `${nextjsUrl}${item.path}` : item.path} 
                         onClick={() => window.scrollTo({ top: 0, left: 0 })} 
                         className='text-white hover:text-gray-300 transition-colors duration-200'
                       >
