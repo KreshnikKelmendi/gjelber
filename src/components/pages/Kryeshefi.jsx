@@ -1,7 +1,6 @@
 import React from 'react';
-import FetchData from '../hooks/FetchData';
 import noraCimili from "../assets/kryeshefiEkzekutiv.png";
-import andiBelegu from "../assets/IMG-20241004-WA0007.jpg";
+// import andiBelegu from "../assets/IMG-20241004-WA0007.jpg";
 import artaDuriqi from "../assets/Arta - bio.jpg";
 
 const Kryeshefi = () => {
@@ -30,7 +29,7 @@ const Kryeshefi = () => {
       </section>
 
       {/* Andi Belegu Section */}
-      <section className='w-full flex flex-col lg:flex-row mt-16 lg:mt-24 items-center'>
+      {/* <section className='w-full flex flex-col lg:flex-row mt-16 lg:mt-24 items-center'>
         <div className='flex justify-center items-center'>
           <img src={andiBelegu} alt='' className='w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] object-cover rounded-md' />
         </div>
@@ -43,7 +42,7 @@ const Kryeshefi = () => {
             Ndër organizatat ku Andi ka punuar dhe ka dhënë kontribut janë Fondi për të Drejtën Humanitare dhe Qendra për Trajnime dhe Studime Gjinore. Në biznes ka treguar sukses të madh si udhëheqës i agjensionit të patundshmërive Anem Real Estate ku për vite me radhë ka mbajtur pozitën e Drejtorit Ligjor dhe Drejtorit për Planifikim dhe Zhvillim të biznesit. Nga përvoja dhe shkollimi ai ka njohuri të zgjeruara të së drejtës, ekonomisë, menaxhimit dhe planifikimit strategjik
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Arta Duriqi Section */}
       <section className='w-full flex flex-col lg:flex-row mt-16 lg:mt-24 items-center'>
