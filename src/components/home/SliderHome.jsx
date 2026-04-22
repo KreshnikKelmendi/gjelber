@@ -29,14 +29,12 @@ const SliderHome = () => {
     },
   ];
 
-  const changeSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  };
-
   useEffect(() => {
-    const intervalId = setInterval(changeSlide, 5000);
+    const intervalId = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 5000);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [slides.length]);
 
   const goToSlide = (index) => {
     setCurrentSlide(index);

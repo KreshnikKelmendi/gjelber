@@ -5,7 +5,7 @@ import { data } from '../data/activityData';
 const SinglePageOfActivity = () => {
     const { id } = useParams();
 
-    const ads = data?.find((ad) => ad.id == id);
+    const ads = data?.find((ad) => String(ad.id) === String(id));
 
   if (!ads) {
     return <div className='font-custom text-2xl mt-5 justify-center items-center text-center'>WORK NOT FOUND. BAD REQUEST !</div>;

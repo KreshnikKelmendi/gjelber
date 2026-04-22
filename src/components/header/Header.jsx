@@ -4,7 +4,6 @@ import Button from './Button';
 import menu from "../assets/menu.png";
 import closeIcon from "../assets/remove.png";
 import logo from "../assets/Layer_1.png";
-import { nextjsUrl } from "../assets/api/nextjsUrl";
 
 const DropdownMenu = ({ closeMenu }) => {
   return (
